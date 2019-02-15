@@ -12,6 +12,11 @@ main#blocks section.block-services {
             }
         }
     }
+    .row {
+        justify-content: center;
+        max-width: 435px;
+        margin: auto!important;
+    }
 
     .service-title {
         @media screen and (max-width: 767px) {

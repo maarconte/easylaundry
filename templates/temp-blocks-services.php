@@ -24,9 +24,9 @@
                     <!-- Service -->
                     <?php if (have_rows('service') ) : ?>
                           <?php while( have_rows('service') ) : the_row(); ?>
-                          <div class="col-md-6 col-sm-12 service">
+                          <div class="col-md-12 col-sm-12 service">
                                 <div class="row">
-                                    <div class="col-2">
+                                    <div class="col-4">
                                           <!-- Icon -->
                                           <?php if (get_sub_field('icon') ) :
                                                 $image = get_sub_field('icon');?>
@@ -34,7 +34,7 @@
                                           <?php endif; ?>
                                           <!-- Icon -->
                                     </div>
-                                    <div class="col-10">
+                                    <div class="col-8">
                                           <!-- Icon title -->
                                           <?php if(get_sub_field('title') ) : ?>
                                                 <h4 class="service-title"><?php echo get_sub_field('title'); ?></h4>
