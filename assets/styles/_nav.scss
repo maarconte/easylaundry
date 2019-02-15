@@ -1,0 +1,159 @@
+/**
+ * Nav CSS File
+ * Contains all navigation related styles.
+ *
+ * @author      ThatMuch
+ * @version     0.1.0
+ * @since       undefined 0.1.0.0
+ *
+ */
+
+@import "vars";
+
+/*==================================================================================
+  NAV
+==================================================================================*/
+nav.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: $header_height;
+    z-index: 999999;
+    padding: 0 50px;
+    background-color: $color-secondary;
+
+    @media screen and (max-width: 440px) {
+        padding: 30px 50px;
+    }
+
+    .container {
+        @include mobile {
+            max-width: 700px !important;
+        }
+
+
+        @media (min-width: 1200px) {
+            max-width: 1170px;
+        }
+    }
+
+    .navbar-collapse {
+        flex-grow: inherit !important;
+    }
+
+    .logo  {
+        width: 3rem;
+        height: 3rem;
+        margin-right: 1rem;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @include mobile {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+
+    .navbar-collapse.show {
+        width: 100vw;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: $header_height;
+        padding: 20px 55px;
+        text-align: center;
+
+        @media screen and (max-width: 440px) {
+            padding: 18px 25px;
+            top: 4.4rem;
+        }
+
+        a {
+            color: #fff;
+        }
+    }
+
+    .navbar-brand {
+        align-items: center;
+        display: flex;
+        font-family: "Dosis", sans-serif;
+        font-size: 22px !important;
+
+        @include mobile {
+            font-size: .8rem;
+        }
+
+
+        @media screen and (max-width: 767px) {
+            font-size: 1.8rem;
+        }
+
+        @media screen and (max-width: 440px) {
+            font-size: 30px !important;
+        }
+    }
+
+    .navbar-menu {
+        @media screen and (max-width: 992px) {
+            background-color: #f8f9fa !important;
+            padding: 20px 56px;
+            text-align: center;
+            position: absolute;
+            top: 4rem;
+            left: 0;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 680px) {
+            font-size: 19px !important;
+        }
+
+        @media screen and (max-width: 440px) {
+            padding: 18px 25px;
+            top: 4.4rem;
+        }
+
+        .btn {
+            border-radius: 50px;
+
+            @include mobile {
+                font-size: .8rem;
+            }
+
+
+            @media screen and (max-width: 550px) {
+                display: block;
+                margin-bottom: 20px;
+                font-size: 1.1rem;
+            }
+
+            @media screen and (max-width: 767px) {
+                font-size: 20px !important;
+                display: block;
+                width: 100%;
+            }
+        }
+
+        .btn-default {
+            border: 1px solid $color-primary;
+            background-color: transparent;
+            color: $color-primary !important;
+        }
+    }
+
+    .slogan-header {
+        font-family: Raleway, sans-serif !important;
+        font-size: 18px !important;
+    }
+
+    .navbar-toggler {
+        color: #66f !important;
+        border: none !important;
+        outline: none !important;
+
+        @media screen and (max-width: 440px) {
+            font-size: 25px !important;
+        }
+    }
+}

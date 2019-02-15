@@ -1,0 +1,45 @@
+main#blocks section.block-services {
+    &.bg-primary {
+        .service-icon {
+            color: $color-primary-darker;
+
+            @media screen and (max-width: 767px) {
+                max-width: 80%;
+            }
+
+            @media screen and (max-width: 340px) {
+                margin-top: 0.6rem;
+            }
+        }
+    }
+
+    .service-title {
+        @media screen and (max-width: 767px) {
+            font-size: 30px;
+        }
+
+        @media screen and (max-width: 340px) {
+            font-size: 25px;
+        }
+    }
+
+    .service-text {
+        @media screen and (max-width: 767px) {
+            font-size: 15px;
+        }
+    }
+
+    .service {
+        margin-bottom: 2rem;
+
+        @media screen and (max-width: 530px) {
+            margin-bottom: 2rem !important;
+        }
+
+        &-icon {
+            max-width: 100%;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+}
