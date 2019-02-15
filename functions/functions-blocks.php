@@ -48,6 +48,7 @@ function yupeach_blocks() {
     if (get_row_layout() == 'contact') : yupeach_block_contact(); endif;
     if (get_row_layout() == 'stats') : yupeach_block_stats(); endif;
     if (get_row_layout() == 'faq') : yupeach_block_faq(); endif;
+    if (get_row_layout() == 'sets') : yupeach_block_set(); endif;
     endwhile;
   endif;
   return ob_get_flush();
@@ -154,6 +155,13 @@ function yupeach_block_stats() {
 function yupeach_block_faq() {
   ob_start('sanitize_output');
     include (get_template_directory().'/templates/temp-blocks-faq.php');
+  return ob_get_flush();
+}
+/* Set
+/––––––––––––––––––––––––*/
+function yupeach_block_set() {
+  ob_start('sanitize_output');
+    include (get_template_directory().'/templates/temp-blocks-set.php');
   return ob_get_flush();
 }
 ?>

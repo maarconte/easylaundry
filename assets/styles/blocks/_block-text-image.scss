@@ -19,9 +19,12 @@
 
     & .section:nth-child(even) {
         flex-direction: row-reverse;
+        text-align-last: left;
     }
 
     .section {
+        text-align: right;
+
         @media screen and (max-width: 767px) {
             margin-bottom: 2rem;
             display: inherit;
@@ -56,6 +59,7 @@
             height: 415px;
             overflow: hidden;
             position: relative;
+            display: flex;
 
             @media screen and (max-width: 1000px) {
                 height: 310px;
@@ -77,15 +81,8 @@
 
             img {
                 display: block;
-                margin: 0 auto;
                 max-width: 100%;
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-
-                @media screen and (max-width: 530px) {
-                    right: 0;
-                }
+                margin: auto;
             }
         }
     }
