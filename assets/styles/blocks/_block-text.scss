@@ -1,5 +1,10 @@
 main#blocks {
     .block-text {
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-x: -25%;
+        background-position-y: bottom;
+
         .container {
             max-width: 435px !important;
         }

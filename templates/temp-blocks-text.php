@@ -11,7 +11,8 @@
  */
  ?>
 
- <section  class="block-text <?php the_sub_field('fond')?>">
+ <section  class="block-text <?php the_sub_field('fond')?>"
+ style="background-image: url(<? echo the_sub_field('image') ?>)">
 
  <div class="container">
         <!-- Title -->

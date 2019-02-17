@@ -166,4 +166,10 @@ input:not([type="submit"]), textarea {
     border: none !important;
 }
 
+.btn, button {
+    border-radius: 0 !important;
+    text-transform: uppercase;
+    font-family: 'Roboto',sans-serif;
+}
+
 /*=====  End of Forms  ======*/
