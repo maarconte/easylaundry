@@ -42,19 +42,6 @@ nav.navbar {
         flex-grow: inherit !important;
     }
 
-    .logo  {
-        width: 3rem;
-        height: 3rem;
-        margin-right: 1rem;
-        background-repeat: no-repeat;
-        background-size: contain;
-
-        @include mobile {
-            width: 2rem;
-            height: 2rem;
-        }
-    }
-
     .navbar-collapse.show {
         width: 100vw;
         width: 100%;
@@ -113,47 +100,19 @@ nav.navbar {
             padding: 18px 25px;
             top: 4.4rem;
         }
-
-        .btn {
-            border-radius: 50px;
-
-            @include mobile {
-                font-size: .8rem;
-            }
-
-
-            @media screen and (max-width: 550px) {
-                display: block;
-                margin-bottom: 20px;
-                font-size: 1.1rem;
-            }
-
-            @media screen and (max-width: 767px) {
-                font-size: 20px !important;
-                display: block;
-                width: 100%;
-            }
-        }
-
-        .btn-default {
-            border: 1px solid $color-primary;
-            background-color: transparent;
-            color: $color-primary !important;
-        }
     }
 
-    .slogan-header {
-        font-family: Raleway, sans-serif !important;
-        font-size: 18px !important;
-    }
-
-    .navbar-toggler {
-        color: #66f !important;
-        border: none !important;
-        outline: none !important;
-
-        @media screen and (max-width: 440px) {
-            font-size: 25px !important;
-        }
+    .btn-menu {
+        background-color: $color-black;
+        color: #fff;
+        text-transform: uppercase;
+        height: 100%;
+        padding: 0 30px;
+        border: 0;
+        font-family: 'Roboto', sans-serif;
+        position: absolute;
+        right: 0;
+        font-weight: 700;
+        line-height: 67.5px;
     }
 }
