@@ -1,3 +1,11 @@
 main#blocks {
-    .block-text {}
+    .block-text {
+        .container {
+            max-width: 435px !important;
+        }
+
+        &.bg-primary {
+            color: $color-secondary;
+        }
+    }
 }

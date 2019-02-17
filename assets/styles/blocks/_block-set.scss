@@ -1,0 +1,42 @@
+.block-sets {
+    .section-title {
+        color: #fff !important;
+        margin-bottom: 3rem;
+    }
+
+    .set {
+        &-title, &-price {
+            color: $color-secondary;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+        }
+
+        &-title {
+            font-size: 2rem;
+        }
+
+        &-price {
+            font-size: 8rem;
+        }
+
+        .nav-tabs {
+            border-bottom: inherit !important;
+            margin-bottom: 1rem;
+
+            .nav-link {
+                border-radius: 0 !important;
+                flex-grow: 1;
+                text-align: center;
+                color: #000;
+                border-color: #000 !important;
+                margin-right: -1px;
+
+                &.active, &:hover {
+                    color: #fff;
+                    background-color: #000;
+                }
+            }
+        }
+    }
+}

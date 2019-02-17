@@ -19,7 +19,7 @@
 
     & .section:nth-child(even) {
         flex-direction: row-reverse;
-        text-align-last: left;
+        text-align: left;
     }
 
     .section {

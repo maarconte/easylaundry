@@ -10,9 +10,7 @@
  *
  */
  ?>
-<section id="block-services" class="block-services
-<? if(get_sub_field('fond') == "Couleur"):?> bg-primary
-  <? elseif(get_sub_field('fond') == "Gris"):?> bg-grey<? endif;?>">
+<section id="block-services" class="block-services bg-secondary">
 
         <div class="container">
               <!-- Title -->

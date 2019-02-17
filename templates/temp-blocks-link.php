@@ -11,9 +11,7 @@
  */
  ?>
 
-  <section class="block-link
-  <? if(get_sub_field('fond') == "Couleur"):?> bg-primary
-  <? elseif(get_sub_field('fond') == "Gris"):?> bg-light<? endif;?>">
+  <section class="block-link <?php the_sub_field('fond')?>">
 
     <!-- Section background: image -->
     <? if(get_sub_field('fond') == "Image"):?>
