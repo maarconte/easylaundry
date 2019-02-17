@@ -23,27 +23,34 @@
     <!-- Section background: image -->
     <div class="container">
         <!-- Title -->
-        <?php if(get_sub_field('title') ) : ?>
-            <h2 class="section-title"><?php echo get_sub_field('title'); ?></h2>
-        <?php endif; ?>
-        <!-- Title -->
+        <div class="row">
+            <div class="col-7 block-title-link">
+                <?php if(get_sub_field('title') ) : ?>
+                    <h2 class="section-title"><?php echo get_sub_field('title'); ?></h2>
+                <?php endif; ?>
+                <!-- Title -->
 
-        <!-- Text -->
-        <?php if(get_sub_field('text') ) : ?>
-            <p> <?php echo get_sub_field('text'); ?></p>
-        <?php endif; ?>
-        <!-- Text -->
-        <!-- Button -->
-        <?php if (have_rows('button')) : ?>
-            <?php while ( have_rows('button') ) : the_row(); ?>
-                <?php if (get_sub_field('link') == 'Externe' && get_sub_field('label') && get_sub_field('url') ) : ?>
-                    <a href="<?php the_sub_field('url'); ?>" class="btn btn-primary"><?php the_sub_field('label'); ?></a>
+                <!-- Text -->
+                <?php if(get_sub_field('text') ) : ?>
+                    <p> <?php echo get_sub_field('text'); ?></p>
                 <?php endif; ?>
-                <?php if (get_sub_field('link') == 'Interne' && get_sub_field('label') && get_sub_field('int_url') ) : ?>
-                    <a href="<?php the_sub_field('int_url'); ?>" class="btn btn-primary"><?php the_sub_field('label'); ?></a>
+                <!-- Text -->
+                <!-- Button -->
+                <?php if (have_rows('button')) : ?>
+                    <?php while ( have_rows('button') ) : the_row(); ?>
+                        <?php if (get_sub_field('link') == 'Externe' && get_sub_field('label') && get_sub_field('url') ) : ?>
+                            <a href="<?php the_sub_field('url'); ?>" class="btn btn-primary"><?php the_sub_field('label'); ?></a>
+                        <?php endif; ?>
+                        <?php if (get_sub_field('link') == 'Interne' && get_sub_field('label') && get_sub_field('int_url') ) : ?>
+                            <a href="<?php the_sub_field('int_url'); ?>" class="btn btn-primary"><?php the_sub_field('label'); ?></a>
+                        <?php endif; ?>
+                    <?php endwhile; ?>
                 <?php endif; ?>
-            <?php endwhile; ?>
-        <?php endif; ?>
+            </div>
+            <div class="col-5 block-img-link">
+               <img src="http://easylaundry.local/wp-content/themes/easylaundry/assets/images/Image_machine02.png" alt="Smiley face" width="100%">
+            </div>    
         <!-- Button -->
+        </div>
       </div>
 </section>
