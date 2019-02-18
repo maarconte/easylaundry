@@ -26,6 +26,7 @@ nav.navbar {
     @media screen and (max-width: 767px) {
     height: 3rem;
     }
+    
 
     @media screen and (max-width: 440px) {
         padding: 30px 50px;
@@ -130,6 +131,9 @@ nav.navbar {
         @media screen and (max-width: 767px) {
              line-height: 75.5px;
             font-size: 15px;
+        }
+        @media screen and (max-width: 490px){
+        line-height: 49.5px;
         }
     }
 }
