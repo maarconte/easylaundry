@@ -80,3 +80,46 @@ $args = array(
 /* if(function_exists('acf_add_options_page') ) {
     acf_add_options_page($args);
 } */
+
+
+
+function customize_contact( $wp_customize ) {
+
+    $wp_customize->add_section( 'contact_section' , array(
+        'title'    => 'Coordonnées',
+        'priority' => 30
+    ) );   
+
+    $wp_customize->add_setting( 'tel_contact' , array(
+        'default' =>''
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'tel_contact', array(
+        'label' => __( 'téléphone', 'stanlee' ),
+        'section'  => 'contact_section',
+        'settings' => 'tel_contact',
+    ) ) );
+
+
+    $wp_customize->add_setting( 'email_contact' , array(
+        'default' =>''
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'email_contact', array(
+        'label' => __( 'Email', 'stanlee' ),
+        'section'  => 'contact_section',
+        'settings' => 'email_contact',
+	) ) );
+	
+	$wp_customize->add_setting( 'adresse_contact' , array(
+        'default' =>''
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'adresse_contact', array(
+	'label' => __( 'Adresse', 'stanlee' ),
+        'section'  => 'contact_section',
+        'settings' => 'adresse_contact',
+    ) ) );
+
+}
+add_action( 'customize_register', 'customize_contact'); 
