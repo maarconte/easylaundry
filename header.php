@@ -37,12 +37,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="container">
     <div class="d-flex align-items-center">
         <a class="navbar-brand" href="<?php echo site_url(); ?>"><?php bloginfo( 'name' ); ?></a>
-        <span class="pl-3 pr-3 info-header"><?php if ( get_field('phone', 'option') ) : ?>
+       <?php if ( get_field('phone', 'option') ) : ?>
+       <span class="pl-3 pr-3 info-header">
             <?php echo get_field('phone', 'option'); ?>
-        <?php endif; ?></span>
-        <span class="pl-3 pr-3 info-header"><?php if ( get_field('contact_mail', 'option') ) : ?>
+            </span>
+        <?php endif; ?>
+       <?php if ( get_field('contact_mail', 'option') ) : ?>
+       <span class="pl-3 pr-3 info-header">
             <?php echo get_field('contact_mail', 'option'); ?>
-        <?php endif; ?></span>
+            </span>
+        <?php endif; ?>
     </div>
     <a class="btn-menu" href="">Passer commande</a>
 </div>
