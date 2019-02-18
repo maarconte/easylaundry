@@ -37,14 +37,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="container">
     <div class="d-flex align-items-center">
         <a class="navbar-brand" href="<?php echo site_url(); ?>"><?php bloginfo( 'name' ); ?></a>
-       <?php if ( get_field('phone') ) : ?>
+       <?php if ( get_field('phone', 'option') ) : ?>
        <span class="pl-3 pr-3 info-header">
-            <?php echo get_field('phone'); ?>
+            <?php echo get_field('phone', 'option'); ?>
             </span>
         <?php endif; ?>
-       <?php if ( get_field('contact_mail') ) : ?>
+       <?php if ( get_field('contact_mail', 'option') ) : ?>
        <span class="pl-3 pr-3 info-header">
-            <?php echo get_field('contact_mail'); ?>
+            <?php echo get_field('contact_mail', 'option'); ?>
             </span>
         <?php endif; ?>
     </div>

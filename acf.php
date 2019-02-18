@@ -218,7 +218,7 @@ acf_add_local_field_group(array(
 	'description' => '',
 ));
 /* Coordonnées */
-acf_add_local_field_group(array(
+/* acf_add_local_field_group(array(
 	'key' => 'group_5b925c016f2c0',
 	'title' => 'Coordonées',
 	'fields' => array(
@@ -296,7 +296,7 @@ acf_add_local_field_group(array(
 	'hide_on_screen' => '',
 	'active' => 1,
 	'description' => '',
-));
+)); */
 
 /* Sections */
 acf_add_local_field_group(array(
