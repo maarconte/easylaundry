@@ -40,7 +40,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
        <span class="pl-3 pr-3 info-header">
          <?php echo get_theme_mod('tel_contact');?>
             </span>
-        <?php endif; ?>
        <span class="pl-3 pr-3 info-header">
        <?php echo get_theme_mod('email_contact');?>
         </span>
