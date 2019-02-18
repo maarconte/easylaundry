@@ -36,7 +36,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <nav class="navbar navbar-expand-lg navbar-light">
 <div class="container">
     <div class="d-flex align-items-center">
-        <a class="navbar-brand" href="<?php echo site_url(); ?>"><?php bloginfo( 'name' ); ?></a><span class="pl-3 pr-3 info-header">06 06 96 96 96</span><span class="pl-3 pr-3 info-header">contact@gmail.com</span>
+        <a class="navbar-brand" href="<?php echo site_url(); ?>"><?php bloginfo( 'name' ); ?></a>
+       <?php if ( get_field('phone') ) : ?>
+       <span class="pl-3 pr-3 info-header">
+            <?php echo get_field('phone'); ?>
+            </span>
+        <?php endif; ?>
+       <?php if ( get_field('contact_mail') ) : ?>
+       <span class="pl-3 pr-3 info-header">
+            <?php echo get_field('contact_mail'); ?>
+            </span>
+        <?php endif; ?>
     </div>
     <a class="btn-menu" href="">Passer commande</a>
 </div>

@@ -78,5 +78,5 @@ $args = array(
 
 );
 if(function_exists('acf_add_options_page') ) {
-    acf_add_options_page( $args);
+    acf_add_options_page($args);
 }
