@@ -132,8 +132,12 @@ nav.navbar {
              line-height: 75.5px;
             font-size: 15px;
         }
+
+        @media screen and (max-width: 667px){
+             line-height: 65.5px;
+        }
         @media screen and (max-width: 490px){
-        line-height: 49.5px;
+              line-height: 49.5px;
         }
     }
 }
