@@ -29,7 +29,8 @@ nav.navbar {
     
 
     @media screen and (max-width: 440px) {
-        padding: 30px 50px;
+        padding-left: 10px!important;
+
     }
     .info-header:first-child{
         border-left: 1px solid #000;
@@ -90,7 +91,7 @@ nav.navbar {
         }
 
         @media screen and (max-width: 440px) {
-            font-size: 30px !important;
+            font-size: 20px !important;
         }
     }
 
@@ -110,9 +111,10 @@ nav.navbar {
         }
 
         @media screen and (max-width: 440px) {
-            padding: 18px 25px;
             top: 4.4rem;
+            height: inherit;
         }
+
     }
 
     .btn-menu {
@@ -127,13 +129,26 @@ nav.navbar {
         right: 0;
         font-weight: 700;
         line-height: 67.5px;
+        top: 0!important;
 
         @media screen and (max-width: 767px) {
              line-height: 75.5px;
             font-size: 15px;
         }
+
+        @media screen and (max-width: 667px){
+             line-height: 65.5px;
+        }
         @media screen and (max-width: 490px){
-        line-height: 49.5px;
+              line-height: 49.5px;
+        }
+        @media screen and (max-width: 450px){
+        line-height: 41.5px;
+        font-size: 12px;
+        }
+        @media screen and (max-width: 350px){
+            line-height: 35.5px;
         }
     }
 }
+
