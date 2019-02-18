@@ -69,7 +69,6 @@ nav.navbar {
         top: $header_height;
         padding: 20px 55px;
         text-align: center;
-        top: 0;
 
         @media screen and (max-width: 440px) {
             padding: 18px 25px;
@@ -130,7 +129,8 @@ nav.navbar {
         right: 0;
         font-weight: 700;
         line-height: 67.5px;
-
+        top: 0;
+        
         @media screen and (max-width: 767px) {
              line-height: 75.5px;
             font-size: 15px;
