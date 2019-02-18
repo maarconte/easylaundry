@@ -29,7 +29,7 @@ nav.navbar {
     
 
     @media screen and (max-width: 440px) {
-        padding: 5px;
+        padding: 0;
     }
     .info-header:first-child{
         border-left: 1px solid #000;
@@ -110,7 +110,6 @@ nav.navbar {
         }
 
         @media screen and (max-width: 440px) {
-            padding: 5px!important;
             top: 4.4rem;
             height: inherit;
         }
