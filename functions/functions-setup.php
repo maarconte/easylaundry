@@ -205,9 +205,4 @@ function customize_menu( $wp_customize ) {
 
 }
 add_action( 'customize_register', 'customize_menu');
-
 ?>
-
-
-
-
