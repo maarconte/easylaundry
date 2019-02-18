@@ -69,6 +69,7 @@ nav.navbar {
         top: $header_height;
         padding: 20px 55px;
         text-align: center;
+        top: 0;
 
         @media screen and (max-width: 440px) {
             padding: 18px 25px;
@@ -114,6 +115,7 @@ nav.navbar {
             top: 4.4rem;
             height: inherit;
         }
+
     }
 
     .btn-menu {
@@ -140,5 +142,10 @@ nav.navbar {
         @media screen and (max-width: 490px){
               line-height: 49.5px;
         }
+        @media screen and (max-width: 450px){
+        line-height: 35.5px;
+        font-size: 12px;
+        }
     }
 }
+
