@@ -18,7 +18,8 @@
             max-width: 100%;
             flex: inherit;
         }
-        a{
+
+        a {
             @media screen and (max-width: 767px) {
                 display: block;
                 margin: auto;
@@ -26,35 +27,30 @@
         }
     }
 
-    .section-title {
+    .section-text {
         font-size: 1.8rem !important;
         line-height: 2.5rem;
         margin-bottom: 1rem !important;
         text-align: left !important;
         text-transform: initial !important;
+        color: $color-primary-darker;
 
         @media screen and (max-width: 1015px) {
             font-size: 1.5rem !important;
             line-height: 2rem;
+            position: relative;
         }
 
         @media screen and (max-width: 767px) {
             font-size: 28px !important;
             line-height: 30px;
-            text-align: center!important;
+            text-align: center !important;
         }
+
         @media screen and (max-width: 390px) {
             font-size: 25px !important;
             line-height: 29px;
-            
         }
-    }
-
-    .section-text {
-        @extend h2;
-
-        color: $color-primary !important;
-        line-height: 50px !important;
     }
 
     .btn {
@@ -62,43 +58,46 @@
     }
 }
 
-.Blanc{
+.Blanc {
     @media screen and (max-width: 767px) {
-        background-image:inherit!important;
+        background-image: inherit !important;
     }
-    .block-title-link{
+
+    .block-title-link {
         @media screen and (max-width: 767px) {
-        padding-top: 0;
-        padding-right: 15px;
+            padding-top: 0;
+            padding-right: 15px;
         }
     }
 }
 
-.bg-primary{
+.bg-primary {
     // padding: 1rem 3rem 3rem 3rem!important;
 
     background-size: cover;
-    @media screen and (max-width: 767px) {
-        background-image:inherit!important;
-    }
-    .section-text{
-        color:$color-secondary!important;
-        font-size: 22px!important;
-        line-height: 35px!important;
 
+    @media screen and (max-width: 767px) {
+        background-image: inherit !important;
+    }
+
+    .section-text {
+        color: $color-secondary !important;
+        font-size: 22px !important;
+        line-height: 35px !important;
     }
 }
 
-.bg-secondary{
+.bg-secondary {
     // padding: 1rem 3rem 3rem 3rem!important;
     background-size: cover;
-    @media screen and (max-width: 767px) {
-        background-image:inherit!important;
-    }
-    .block-title-link{
-        @media screen and (max-width: 767px) {
-        padding-right: 15px;
 
+    @media screen and (max-width: 767px) {
+        background-image: inherit !important;
+    }
+
+    .block-title-link {
+        @media screen and (max-width: 767px) {
+            padding-right: 15px;
         }
     }
 }
