@@ -172,4 +172,15 @@ input:not([type="submit"]), textarea {
     font-family: 'Roboto',sans-serif;
 }
 
+.btn-outline-dark {
+    color: #000 !important;
+    border-color: #000 !important;
+
+    &:hover {
+        color: #fff !important;
+        border-color: #000 !important;
+        background-color: #000 !important;
+    }
+}
+
 /*=====  End of Forms  ======*/

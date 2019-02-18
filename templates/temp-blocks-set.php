@@ -19,38 +19,47 @@
         <?php endif; ?>
         <!-- Title -->
 
-<?php if ( have_rows('tabs') ) : $i =0; $y =0; $v= 0;?>
-        <div class="row set">
-            <div class="col-sm-6 block-prix">
-            <div class="tab-content" id="nav-tabContent">
-                <?php while( have_rows('tabs') ) : the_row(); ?>
-                    <div class="tab-pane fade <?php if($i == 0) {echo 'active show';} ?>" id="nav-<?php the_sub_field('title_set'); ?>" role="tabpanel" aria-labelledby="nav-<?php the_sub_field('title_set'); ?>-tab">
-                    <p class="set-title">Set <?php the_sub_field('title_set'); ?></p>
-                <p class="set-price"><?php the_sub_field('price_set'); ?> €</p>
-                    </div>
-                <?php $i++; endwhile ?>
-                </div>
-
-            </div>
-            <div class="col-sm-6 block-nav-set">
-                <nav>
+<?php if ( have_rows('tabs') ) : $i =0; $y =0; $v=0;?>
+    <div class="set">
+                <nav class="col-sm-6 ml-auto mr-0">
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <?php while( have_rows('tabs') ) : the_row(); ?>
-                        <a class="nav-item nav-link <?php if($y == 0) {echo 'active';} ?>" id="<?php the_sub_field('title_set'); ?>-tab" data-toggle="tab" data-target="#nav-<?php the_sub_field('title_set'); ?>" role="tab" aria-controls="nav-<?php the_sub_field('title_set'); ?>" aria-selected="true">
+                    <?php  while( have_rows('tabs') ) : the_row();  ?>
+                        <a class="nav-item nav-link <?php if($y == 0) {echo 'active';} ?>" id="<?php the_sub_field('title_set'); ?>-tab" data-toggle="tab" data-target=".nav-<?php the_sub_field('title_set'); ?>" role="tab" aria-controls="nav-<?php the_sub_field('title_set'); ?>" aria-selected="true">
                             <?php the_sub_field('title_set'); ?>
-</a>
+                        </a>
                         <?php  $y++; endwhile ?>
                     </div>
                 </nav>
-                <div class="tab-content" id="nav-tabContent">
-                <?php while( have_rows('tabs') ) : the_row(); ?>
-                    <div class="tab-pane fade <?php if($v == 0) {echo 'active show';} ?>" id="nav-<?php the_sub_field('title_set'); ?>" role="tabpanel" aria-labelledby="nav-<?php the_sub_field('title_set'); ?>-tab">
-                        <?php the_sub_field('text_set'); ?>
-                    </div>
-                <?php $v++; endwhile ?>
+                <div class="tab-content">
+                    <?php while( have_rows('tabs') ) : the_row(); ?>
+                    <div class="tab-pane fade <?php if($i == 0) {echo 'active show';} ?> nav-<?php the_sub_field('title_set'); ?>"  role="tabpanel" aria-labelledby="nav-<?php the_sub_field('title_set'); ?>-tab">
+
+                    <div class="row">
+                            <div class="col-sm-6 block-prix">
+                                <p class="set-title">Set <?php the_sub_field('title_set'); ?></p>
+                                <p class="set-price"><?php the_sub_field('price_set'); ?> €</p>
+                            </div>
+                            <div class="col-sm-6 block-nav-set">
+                            <?php the_sub_field('text_set'); ?>
+                                        <!-- Button -->
+                                        <?php if (have_rows('button')) : ?>
+                                            <?php while ( have_rows('button') ) : the_row(); ?>
+                                                <?php if (get_sub_field('link') == 'Externe' && get_sub_field('label') && get_sub_field('url') ) : ?>
+                                                    <a href="<?php the_sub_field('url'); ?>" class="btn btn-outline-dark"><?php the_sub_field('label'); ?></a>
+                                                <?php endif; ?>
+                                                <?php if (get_sub_field('link') == 'Interne' && get_sub_field('label') && get_sub_field('int_url') ) : ?>
+                                                    <a href="<?php the_sub_field('int_url'); ?>" class="btn btn-outline-dark"><?php the_sub_field('label'); ?></a>
+                                                <?php endif; ?>
+                                            <?php $v++; endwhile; ?>
+                                        <?php endif; ?>
+                                        <!-- Button -->
+                            </div>
+                        </div>
+                        </div>
+                    <?php $i++; endwhile ?>
+
                 </div>
-            </div>
-        </div>
+    </div>
 
 <?php endif; ?>
 
