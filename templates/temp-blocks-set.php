@@ -36,7 +36,7 @@
                 <nav>
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
                     <?php while( have_rows('tabs') ) : the_row(); ?>
-                        <a class="nav-item nav-link <?php if($y == 0) {echo 'active';} ?>" id="<?php the_sub_field('title_set'); ?>-tab" data-toggle="tab" href="#nav-<?php the_sub_field('title_set'); ?>" role="tab" aria-controls="nav-<?php the_sub_field('title_set'); ?>" aria-selected="true">
+                        <a class="nav-item nav-link <?php if($y == 0) {echo 'active';} ?>" id="<?php the_sub_field('title_set'); ?>-tab" data-toggle="tab" data-target="#nav-<?php the_sub_field('title_set'); ?>" role="tab" aria-controls="nav-<?php the_sub_field('title_set'); ?>" aria-selected="true">
                             <?php the_sub_field('title_set'); ?>
 </a>
                         <?php  $y++; endwhile ?>
