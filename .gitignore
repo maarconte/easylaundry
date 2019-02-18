@@ -88,5 +88,4 @@ $RECYCLE.BIN/
 
 ### Custom ###
 dist
-*.min.css
 rev-manifest.json
