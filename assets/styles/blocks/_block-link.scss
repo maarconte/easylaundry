@@ -2,6 +2,7 @@
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: bottom;
+    position: relative;
 
     &.bg-secondary {
         .section-text {
@@ -45,7 +46,7 @@
         @media screen and (max-width: 390px) {
             font-size: 25px !important;
             line-height: 29px;
-            // text-shadow: 
+            
         }
     }
 
