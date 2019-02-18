@@ -83,6 +83,7 @@
         color:$color-secondary!important;
         font-size: 22px!important;
         line-height: 35px!important;
+        
     }
 }
 
@@ -95,7 +96,7 @@
     .block-title-link{
         @media screen and (max-width: 767px) {
         padding-right: 15px;
-        
+
         }
     }
 }
