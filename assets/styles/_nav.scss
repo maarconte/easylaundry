@@ -90,7 +90,7 @@ nav.navbar {
         }
 
         @media screen and (max-width: 440px) {
-            font-size: 30px !important;
+            font-size: 20px !important;
         }
     }
 
@@ -110,8 +110,9 @@ nav.navbar {
         }
 
         @media screen and (max-width: 440px) {
-            padding: 18px 25px;
+            padding: 5px;
             top: 4.4rem;
+            height: inherit;
         }
     }
 
