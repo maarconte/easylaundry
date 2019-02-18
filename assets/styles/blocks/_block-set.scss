@@ -14,10 +14,25 @@
 
         &-title {
             font-size: 2rem;
+            @media screen and (max-width: 767px) {
+                text-align: center;
+            }
         }
 
         &-price {
             font-size: 8rem;
+            @media screen and (max-width: 930px) {
+                font-size: 6rem;
+            }
+            @media screen and (max-width: 767px) {
+                text-align: center;
+                font-size: 85px;
+            }
+            @media screen and (max-width: 380px) {
+                font-size: 50px;
+                
+            }
+            
         }
 
         .nav-tabs {
@@ -38,5 +53,25 @@
                 }
             }
         }
+        .block-prix{
+            @media screen and (max-width: 767px) {
+                max-width: 100%;
+                -ms-flex: 0 0 100%;
+                flex: 0 0 100%;                
+            }
+        }
+        .block-nav-set{
+            @media screen and (max-width: 767px) {
+                max-width: 100%;
+                -ms-flex: 0 0 100%;
+                flex: 0 0 100%;                
+            } 
+            nav {
+             @media (max-width: 767px){
+                    width: inherit!important;
+                }
+            }
+        }
     }
 }
+

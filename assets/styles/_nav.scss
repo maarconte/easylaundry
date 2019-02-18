@@ -23,8 +23,25 @@ nav.navbar {
     padding: 0 50px;
     background-color: $color-secondary;
 
+    @media screen and (max-width: 767px) {
+    height: 3rem;
+    }
+
     @media screen and (max-width: 440px) {
         padding: 30px 50px;
+    }
+    .info-header:first-child{
+        border-left: 1px solid #000;
+    }
+    .info-header{
+        border-right: 1px solid #000;
+
+        @media screen and (max-width: 767px) {
+           font-size: 15px!important;
+        }
+        @media screen and (max-width: 722px) {
+            display: none;
+        }
     }
 
     .container {
@@ -71,11 +88,6 @@ nav.navbar {
             font-size: .8rem;
         }
 
-
-        @media screen and (max-width: 767px) {
-            font-size: 1.8rem;
-        }
-
         @media screen and (max-width: 440px) {
             font-size: 30px !important;
         }
@@ -114,5 +126,10 @@ nav.navbar {
         right: 0;
         font-weight: 700;
         line-height: 67.5px;
+
+        @media screen and (max-width: 767px) {
+             line-height: 75.5px;
+            font-size: 15px;
+        }
     }
 }

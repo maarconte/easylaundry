@@ -29,19 +29,19 @@ main#blocks {
             font-weight: 300;
 
             @media screen and (max-width: 880px) {
-                font-size: 37px;
+                font-size: 35px;
             }
 
             @media screen and (max-width: 767px) {
-                font-size: 38px !important;
+                font-size: 33px;
             }
 
             @media screen and (max-width: 680px) {
                 font-size: 30px;
             }
 
-            @media screen and (max-width: 340px) {
-                font-size: 28px;
+            @media screen and (max-width: 380px) {
+                font-size: 26px;
             }
         }
 
@@ -63,6 +63,21 @@ main#blocks {
             // filter: brightness(0.5);
        
         }
+    }
+
+    section:nth-child(2){
+         padding: 1rem 3rem 3rem 3rem!important;
+       .container{
+        max-width: 540px; 
+          .block-title-link{
+            max-width: 100%;
+            flex: 100%;
+            padding-right: 0px; 
+          }
+       }
+    }
+    section:last-child{
+        padding: 1rem 3rem 3rem 3rem!important;
     }
 }
 

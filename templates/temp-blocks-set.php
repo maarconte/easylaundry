@@ -21,7 +21,7 @@
 
 <?php if ( have_rows('tabs') ) : $i =0; $y =0; $v= 0;?>
         <div class="row set">
-            <div class="col-sm-6">
+            <div class="col-sm-6 block-prix">
             <div class="tab-content" id="nav-tabContent">
                 <?php while( have_rows('tabs') ) : the_row(); ?>
                     <div class="tab-pane fade <?php if($i == 0) {echo 'active show';} ?>" id="nav-<?php the_sub_field('title_set'); ?>" role="tabpanel" aria-labelledby="nav-<?php the_sub_field('title_set'); ?>-tab">
@@ -32,7 +32,7 @@
                 </div>
 
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 block-nav-set">
                 <nav>
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
                     <?php while( have_rows('tabs') ) : the_row(); ?>
