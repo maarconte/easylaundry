@@ -95,7 +95,7 @@ function customize_contact( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'tel_contact', array(
-        'label' => __( 'téléphone', 'stanlee' ),
+        'label' => __( 'Téléphone', 'stanlee' ),
         'section'  => 'contact_section',
         'settings' => 'tel_contact',
     ) ) );
