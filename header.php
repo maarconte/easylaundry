@@ -36,7 +36,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <nav class="navbar navbar-expand-lg navbar-light">
 <div class="container">
     <div class="d-flex align-items-center">
-        <a class="navbar-brand" href="<?php echo site_url(); ?>"><?php bloginfo( 'name' ); ?></a>  
+        <a class="navbar-brand" href="<?php echo site_url(); ?>"><?php bloginfo( 'name' ); ?></a>
        <span class="pl-3 pr-3 info-header">
          <?php echo get_theme_mod('tel_contact');?>
             </span>
@@ -44,7 +44,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
        <?php echo get_theme_mod('email_contact');?>
         </span>
     </div>
-    <a class="btn-menu" href="">Passer commande</a>
+    <a class="btn-menu" href="http://easylaundry.fr/categorie-produit/pack/">Passer commande</a>
 </div>
 </nav>
 <script>
