@@ -21,22 +21,24 @@
 
 <?php if ( have_rows('tabs') ) : $i =0; $y =0; $v=0;?>
     <div class="set">
-                <nav class="col-sm-6 ml-auto mr-0">
-                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <?php  while( have_rows('tabs') ) : the_row();  ?>
-                        <a class="nav-item nav-link <?php if($y == 0) {echo 'active';} ?>" id="<?php the_sub_field('title_set'); ?>-tab" data-toggle="tab" data-target=".nav-<?php the_sub_field('title_set'); ?>" role="tab" aria-controls="nav-<?php the_sub_field('title_set'); ?>" aria-selected="true">
-                            <?php the_sub_field('title_set'); ?>
-                        </a>
-                        <?php  $y++; endwhile ?>
-                    </div>
-                </nav>
+        <div class="row">
+            <nav class="col-md-6 ml-auto mr-0">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <?php  while( have_rows('tabs') ) : the_row();  ?>
+                    <a class="nav-item nav-link <?php if($y == 0) {echo 'active';} ?>" id="<?php the_sub_field('title_set'); ?>-tab" data-toggle="tab" data-target=".nav-<?php the_sub_field('title_set'); ?>" role="tab" aria-controls="nav-<?php the_sub_field('title_set'); ?>" aria-selected="true">
+                        <?php the_sub_field('title_set'); ?>
+                    </a>
+                    <?php  $y++; endwhile ?>
+                </div>
+            </nav>
+        </div>
                 <div class="tab-content">
                     <?php while( have_rows('tabs') ) : the_row(); ?>
                     <div class="tab-pane fade <?php if($i == 0) {echo 'active show';} ?> nav-<?php the_sub_field('title_set'); ?>"  role="tabpanel" aria-labelledby="nav-<?php the_sub_field('title_set'); ?>-tab">
 
                     <div class="row">
                             <div class="col-sm-6 block-prix">
-                                <p class="set-title">Set <?php the_sub_field('title_set'); ?></p>
+                                <p class="set-title">Kit <?php the_sub_field('title_set'); ?></p>
                                 <p class="set-price"><?php the_sub_field('price_set'); ?> €</p>
                             </div>
                             <div class="col-sm-6 block-nav-set">

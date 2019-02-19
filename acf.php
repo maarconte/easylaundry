@@ -1856,7 +1856,7 @@ acf_add_local_field_group(array(
 			'layout_5b86744c3c477' => array(
 				'key' => 'layout_5b86744c3c477',
 					'name' => 'sets',
-					'label' => 'Sets',
+					'label' => 'Kits',
 					'display' => 'block',
 					'sub_fields' => array(
 						array(
@@ -1951,9 +1951,9 @@ acf_add_local_field_group(array(
 										'id' => '',
 									),
 									'default_value' => '',
-									'tabs' => 'text',
+									'tabs' => 'all',
 									'media_upload' => 1,
-									'toolbar' => 'full',
+									'toolbar' => 'basic',
 									'delay' => 0,
 								),
 								array(
