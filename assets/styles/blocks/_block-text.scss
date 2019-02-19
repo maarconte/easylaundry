@@ -18,8 +18,12 @@ main#blocks {
         }
 
         .asterisk {
-            color: #7f8acb !important;
             opacity: 1;
+            
+            p{
+              color: #7f8acb!important;
+            }
         }
+        
     }
 }
