@@ -14,12 +14,12 @@ main#blocks section.block-services {
     }
     .row {
         justify-content: center;
-        max-width: 490px;
+        max-width: 519px;
         margin: auto!important;
     }
 
     .service-title {
-        font-size: 22px;
+        font-size: 25px;
 
         // @media screen and (max-width: 767px) {
         //     font-size: 30px;
@@ -28,17 +28,23 @@ main#blocks section.block-services {
         // @media screen and (max-width: 380px){
         //     font-size: 2Opx!important;
         // }
-        
+        @media screen and (max-width: 767px) {
+            font-size: 19px;
+        }
+
         @media screen and (max-width: 380px){
             font-size: 18px!important;
         }
     }
 
     .service-text {
-        font-size: 22px;
+        font-size: 24px;
 
         @media screen and (max-width: 767px) {
-            font-size: 15px;
+            font-size: 19px;
+        }
+        @media screen and (max-width: 380px){
+            font-size: 18px!important;
         }
     }
 

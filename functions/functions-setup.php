@@ -205,4 +205,18 @@ function customize_menu( $wp_customize ) {
 
 }
 add_action( 'customize_register', 'customize_menu');
+
+
+function footer_new_menu() {
+    register_nav_menus(
+      array(
+        'menu_footer' => __( 'Menu footer' ),
+        'extra-menu' => __( 'Extra Menu' )
+      )
+    );
+  }
+  add_action( 'init', 'footer_new_menu' );
 ?>
+
+
+
