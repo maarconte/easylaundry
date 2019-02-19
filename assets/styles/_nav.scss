@@ -24,23 +24,24 @@ nav.navbar {
     background-color: $color-secondary;
 
     @media screen and (max-width: 767px) {
-    height: 3rem;
+        height: 3rem;
     }
-    
 
     @media screen and (max-width: 440px) {
-        padding-left: 10px!important;
-
+        padding-left: 10px !important;
     }
-    .info-header:first-child{
+
+    .info-header:first-child {
         border-left: 1px solid #000;
     }
-    .info-header{
+
+    .info-header {
         border-right: 1px solid #000;
 
         @media screen and (max-width: 767px) {
-           font-size: 15px!important;
+            font-size: 15px !important;
         }
+
         @media screen and (max-width: 722px) {
             display: none;
         }
@@ -90,6 +91,7 @@ nav.navbar {
             font-size: .8rem;
         }
 
+
         @media screen and (max-width: 440px) {
             font-size: 20px !important;
         }
@@ -114,7 +116,6 @@ nav.navbar {
             top: 4.4rem;
             height: inherit;
         }
-
     }
 
     .btn-menu {
@@ -124,31 +125,37 @@ nav.navbar {
         height: 100%;
         padding: 0 30px;
         border: 0;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto Slab', serif;
         position: absolute;
         right: 0;
         font-weight: 700;
         line-height: 67.5px;
-        top: 0!important;
+        top: 0 !important;
 
         @media screen and (max-width: 767px) {
-             line-height: 75.5px;
+            line-height: 75.5px;
             font-size: 15px;
         }
 
-        @media screen and (max-width: 667px){
-             line-height: 65.5px;
+        @media screen and (max-width: 667px) {
+            line-height: 65.5px;
         }
-        @media screen and (max-width: 490px){
-              line-height: 49.5px;
+
+        @media screen and (max-width: 490px) {
+            line-height: 49.5px;
         }
-        @media screen and (max-width: 450px){
-        line-height: 41.5px;
-        font-size: 12px;
+
+        @media screen and (max-width: 450px) {
+            line-height: 41.5px;
+            font-size: 12px;
         }
-        @media screen and (max-width: 350px){
+
+        @media screen and (max-width: 350px) {
             line-height: 35.5px;
         }
     }
-}
 
+    .info-header {
+        font-family: 'Roboto', sans-serif;
+    }
+}
