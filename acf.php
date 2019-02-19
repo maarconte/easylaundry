@@ -1,6 +1,6 @@
 <? if( function_exists('acf_add_local_field_group') ):
 /* Temoignages */
-acf_add_local_field_group(array(
+/* acf_add_local_field_group(array(
 	'key' => 'group_5ba67078385a0',
 	'title' => 'Citation',
 	'fields' => array(
@@ -41,9 +41,9 @@ acf_add_local_field_group(array(
 	'hide_on_screen' => '',
 	'active' => 1,
 	'description' => '',
-));
+)); */
 /* Informations membre de l'équipe */
-acf_add_local_field_group(array(
+/* acf_add_local_field_group(array(
 	'key' => 'group_5ba61a37bbb9d',
 	'title' => 'Informations',
 	'fields' => array(
@@ -216,7 +216,7 @@ acf_add_local_field_group(array(
 	'hide_on_screen' => '',
 	'active' => 1,
 	'description' => '',
-));
+)); */
 /* Coordonnées */
 /* acf_add_local_field_group(array(
 	'key' => 'group_5b925c016f2c0',
