@@ -63,21 +63,34 @@ main#blocks {
             // filter: brightness(0.5);
        
         }
+
+        .asterisk {
+            opacity: .5;
+            margin-top: 20px;
+
+            p {
+                font-size: 12px !important;
+                margin-bottom: .5rem;
+            }
+        }
     }
 
-    section:nth-child(2){
-        padding: 4rem 3rem 3rem 3rem!important;
-       .container{
-        max-width: 540px; 
-          .block-title-link{
-            max-width: 100%;
-            flex: 100%;
-            padding-right: 0px; 
-          }
-       }
+    section:nth-child(2) {
+        padding: 4rem 3rem 3rem 3rem !important;
+
+        .container {
+            max-width: 540px;
+
+            .block-title-link {
+                max-width: 100%;
+                flex: 100%;
+                padding-right: 0px;
+            }
+        }
     }
-    section:last-child{
-        padding: 1rem 3rem 3rem 3rem!important;
+
+    section:last-child {
+        padding: 1rem 3rem 3rem 3rem !important;
     }
 }
 

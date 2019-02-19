@@ -25,5 +25,12 @@
             <div><?php echo get_sub_field('text'); ?></div>
         <?php endif; ?>
         <!-- Texte -->
+
+
+        <?php if ( get_sub_field('asterisk') ) : ?>
+                    <div class="asterisk"> <?php echo get_sub_field('asterisk'); ?> </div>
+                    <?php endif; ?>
+
+
     </div>
  </section>

@@ -5,12 +5,21 @@ main#blocks {
         background-position-x: -25%;
         background-position-y: bottom;
 
+        p {
+            font-size: 1.3rem;
+        }
+
         .container {
             max-width: 435px !important;
         }
 
         &.bg-primary {
             color: $color-secondary;
+        }
+
+        .asterisk {
+            color: #7f8acb;
+            opacity: 1;
         }
     }
 }

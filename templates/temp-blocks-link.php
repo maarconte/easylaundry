@@ -27,7 +27,7 @@
 
                 <!-- Text -->
                 <?php if(get_sub_field('text') ) : ?>
-                    <p class="section-text"> <?php echo get_sub_field('text'); ?></p>
+                    <div class="section-text"> <?php echo get_sub_field('text'); ?></div>
                 <?php endif; ?>
                 <!-- Text -->
                 <!-- Button -->
@@ -41,11 +41,13 @@
                         <?php endif; ?>
                     <?php endwhile; ?>
                 <?php endif; ?>
+                <!-- Button -->
+                <?php if ( get_sub_field('asterisk') ) : ?>
+                    <div class="asterisk"> <?php echo get_sub_field('asterisk'); ?> </div>
+                    <?php endif; ?>
+
             </div>
-        <!--     <div class="col-5 block-img-link">
-               <img src="<? // echo the_sub_field('image') ?>" alt="easy-laundry" width="100%">
-            </div> -->
-        <!-- Button -->
+
         </div>
       </div>
 </section>
