@@ -4,12 +4,6 @@
     background-position-y: bottom;
     position: relative;
 
-    &.bg-secondary {
-        .section-text {
-            color: $color-black !important;
-        }
-    }
-
     .block-title-link {
         padding-top: 3rem;
         padding-right: 9%;
