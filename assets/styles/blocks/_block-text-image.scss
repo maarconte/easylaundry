@@ -46,9 +46,17 @@
                 // color: $color-green;
                 font-weight: bold;
             }
+            h4 {
+                font-size: 1.9rem;
+            }
 
             p {
                 margin-top: 1rem;
+                font-size: 22px;
+
+                @media screen and (max-width: 1000px) {
+                font-size: 17px;
+                }
             }
 
             ul {
@@ -57,7 +65,7 @@
         }
 
         &-image {
-            height: 415px;
+            height: 310px;
             overflow: hidden;
             position: relative;
             display: flex;
