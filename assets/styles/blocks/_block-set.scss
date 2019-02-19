@@ -8,7 +8,7 @@
         &-title, &-price {
             color: $color-secondary;
             margin: 0;
-            font-family: 'Roboto Slab', sans-serif;
+            font-family: 'Roboto', sans-serif;
             font-weight: 300;
         }
 
@@ -61,14 +61,37 @@
         }
 
         .block-prix {
+            margin-top: -50px;
+
             @media screen and (max-width: 767px) {
                 max-width: 100%;
                 -ms-flex: 0 0 100%;
                 flex: 0 0 100%;
+                margin-top: 30px;
             }
         }
 
         .block-nav-set {
+            padding-top: 25px;
+
+            ul {
+                list-style: none;
+                margin-bottom: 30px;
+
+                li {
+                    padding-left: 2em;
+                    margin-bottom: 20px;
+                }
+
+                li:before {
+                    content: url(./assets/images/Tracé252.svg);
+                    display: inline-block;
+                    margin-left: -2em;
+                    width: 2em;
+                    margin-right: 2rem;
+                }
+            }
+
             @media screen and (max-width: 767px) {
                 max-width: 100%;
                 -ms-flex: 0 0 100%;
@@ -78,6 +101,12 @@
             nav {
                 @media (max-width: 767px) {
                     width: inherit !important;
+                }
+            }
+
+            .btn {
+                @media screen and (max-width: 767px) {
+                    display: block;
                 }
             }
         }
