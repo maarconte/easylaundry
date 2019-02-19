@@ -203,7 +203,7 @@ main#subsites {
     width: 100vw;
     margin-top: auto;
     color: $color-grey;
-    background: $color-dark;
+    background: $color-black;
 
     .row {
         @media screen and (max-width: 767px) {
@@ -251,6 +251,7 @@ main#subsites {
     .inner {
         padding: 1.5rem 0;
         font-size: 0.8rem;
+        text-align: center;
 
         @media screen and (max-width: 767px) {
             width: 100%;
@@ -267,4 +268,19 @@ main#subsites {
             color: $color-grey2;
         }
     }
+
+    .custom-menu-class {
+        width: 100%;
+         #menu-footer{
+             margin: 0;
+         }
+        li{
+        display: inline-block;
+        padding: 0 15px;
+          a{
+              color:#fff;
+              font-size:16px; 
+          }
+        }
+    }   
 }

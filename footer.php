@@ -9,7 +9,12 @@
     <footer class="footer">
       <div class="container">
         <div class="row inner">
-
+        <?php
+                    wp_nav_menu( array( 
+                    'theme_location' => 'menu_footer', 
+                    'container_class' => 'custom-menu-class') 
+		        ); 
+		        ?>
        <? if(is_active_sidebar('footer-1')){
       dynamic_sidebar('footer-1');
         } ?>
