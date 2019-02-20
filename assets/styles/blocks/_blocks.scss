@@ -3,6 +3,7 @@ main#blocks {
         padding: 4rem 3rem 4rem 3rem;
         position: relative;
         width: 100vw;
+        background-size: cover!important;
 
         @media screen and (max-width: 767px) {
             padding: 3rem 3rem 4rem 3rem;

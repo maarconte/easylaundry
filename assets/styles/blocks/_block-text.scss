@@ -1,7 +1,7 @@
 main#blocks {
     .block-text {
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         background-position-x: -25%;
         background-position-y: bottom;
 
@@ -19,8 +19,8 @@ main#blocks {
 
         .asterisk {
             opacity: 1;
-            
-            p{
+
+            span{
               color: #7f8acb!important;
             }
         }

@@ -31,12 +31,8 @@ nav.navbar {
         padding-left: 10px !important;
     }
 
-    .info-header:first-child {
-        border-left: 1px solid #000;
-    }
-
     .info-header {
-        border-right: 1px solid #000;
+        border-left: 1px solid #000!important;
 
         @media screen and (max-width: 767px) {
             font-size: 15px !important;

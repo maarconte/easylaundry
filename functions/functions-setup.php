@@ -216,7 +216,7 @@ function footer_new_menu() {
     );
   }
   add_action( 'init', 'footer_new_menu' );
-?>
+
 
 
 
