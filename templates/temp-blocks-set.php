@@ -25,7 +25,7 @@
             <nav class="col-md-6 ml-auto mr-0">
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                 <?php  while( have_rows('tabs') ) : the_row();  ?>
-                    <a class="nav-item nav-link <?php if($y == 0) {echo 'active';} ?>" id="<?php the_sub_field('title_set'); ?>-tab" data-toggle="tab" data-target=".nav-<?php the_sub_field('title_set'); ?>" role="tab" aria-controls="nav-<?php the_sub_field('title_set'); ?>" aria-selected="true">
+                    <a class="nav-item nav-link <?php if($y == 0) {echo 'active';} ?>" id="<?php the_sub_field('title_set'); ?>-tab" data-toggle="tab" data-target="#nav-<?php echo $y; ?>" role="tab" aria-controls="#nav-<?php echo $y; ?>" aria-selected="true">
                         <?php the_sub_field('title_set'); ?>
                     </a>
                     <?php  $y++; endwhile ?>
@@ -34,7 +34,7 @@
         </div>
                 <div class="tab-content">
                     <?php while( have_rows('tabs') ) : the_row(); ?>
-                    <div class="tab-pane fade <?php if($i == 0) {echo 'active show';} ?> nav-<?php the_sub_field('title_set'); ?>"  role="tabpanel" aria-labelledby="nav-<?php the_sub_field('title_set'); ?>-tab">
+                    <div id="nav-<?php echo $i; ?>" class="tab-pane fade <?php if($i == 0) {echo 'active show';} ?>"  role="tabpanel" aria-labelledby="nav-<?php the_sub_field('title_set'); ?>-tab">
 
                     <div class="row">
                             <div class="col-sm-6 block-prix">
