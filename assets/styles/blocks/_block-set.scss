@@ -1,7 +1,9 @@
 .block-sets {
+    padding-bottom: 4rem;
+    
     .section-title {
         color: #fff !important;
-        margin-bottom: 3rem;
+        margin-bottom: 50px;
     }
 
     .set {
@@ -48,6 +50,7 @@
                 color: #000;
                 border-color: #000 !important;
                 margin-right: -1px;
+                line-height: 35px;
 
                 &:hover {
                     cursor: pointer;
@@ -72,22 +75,32 @@
         }
 
         .block-nav-set {
-            padding-top: 25px;
+            padding-top: 20px;
+
+            .btn-outline-dark{
+                line-height: 35px;
+                width: 360px;
+                font-weight: bold;
+                font-size: 1.15rem;
+            }
+              
 
             ul {
                 list-style: none;
-                margin-bottom: 30px;
+                margin-bottom: 75px;
 
                 li {
                     padding-left: 2em;
-                    margin-bottom: 20px;
+                    font-size: 23px;
+                    margin-bottom: 8px;
+                    font-family: 'Roboto Slab',serif;
                 }
 
                 li:before {
                     content: url(./assets/images/Tracé252.svg);
                     display: inline-block;
                     margin-left: -2em;
-                    width: 2em;
+                    width: 1em;
                     margin-right: 2rem;
                 }
             }
