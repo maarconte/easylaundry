@@ -20,6 +20,17 @@
     <? yupeach_blocks() ?>
   <? endwhile; endif ?>
 
+  <a class="scrollToTop"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+  <script>
+    $(document).ready(function(){
+     
+      $('.scrollToTop').click(function(){
+          $('html, body').animate({scrollTop : 0},800);
+          return false;
+      });
+    
+    });
+  </script>
 </main>
 
 <? get_footer() ?>
