@@ -5,7 +5,9 @@
     background-position-y: bottom;
     position: relative;
     
-
+    @media screen and (max-width: 991px) {
+        background-image:inherit!important;
+    }
     .block-title-link {
         padding-top: 100px;
         padding-right: 9%;

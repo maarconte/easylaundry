@@ -115,6 +115,7 @@ main#blocks {
     section:last-child {
         background-position: right;
         background-color: $color-grey3!important;
+
         @media screen and (max-width: 991px) {
             background-image:inherit!important;
         }
@@ -151,3 +152,31 @@ main#blocks {
 @import "block-contact";
 @import "block-carousel";
 @import "block-set";
+
+
+.scrollToTop{
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    background-color: $color-white!important;
+    text-decoration: none;
+    position: absolute;
+    right: 4rem;
+    bottom: 16rem;
+    display: inline-block;
+    z-index: 2;
+    line-height: 65px;
+    font-size: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 13px rgba(0,0,0,.29);
+
+
+    @media screen and (max-width: 700px) {
+    font-size: 25px;
+    bottom: 14rem;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    } 
+}
