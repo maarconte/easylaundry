@@ -1,9 +1,13 @@
 .block-sets {
     padding-bottom: 4rem;
-    
+
     .section-title {
         color: #fff !important;
         margin-bottom: 50px;
+
+        @media screen and (max-width: 991px) {
+          margin-bottom: 10px;
+        } 
     }
 
     .set {
@@ -81,7 +85,15 @@
                 line-height: 35px;
                 width: 360px;
                 font-weight: bold;
-                font-size: 1.15rem;
+                font-size: 20px;
+
+                @media screen and (max-width: 991px) {
+                width: 325px;
+                }
+                
+                @media screen and (max-width: 867px) {
+                width: 295px;
+                }  
             }
               
 
@@ -89,11 +101,20 @@
                 list-style: none;
                 margin-bottom: 75px;
 
+                @media screen and (max-width: 867px) {
+                    margin-bottom: 55px;
+                } 
+
                 li {
                     padding-left: 2em;
                     font-size: 23px;
                     margin-bottom: 8px;
                     font-family: 'Roboto Slab',serif;
+
+                    @media screen and (max-width: 991px) {
+                        font-size: 21px;
+                         margin-bottom: 6px;
+                    } 
                 }
 
                 li:before {

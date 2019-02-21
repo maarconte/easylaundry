@@ -1,4 +1,6 @@
 main#blocks section.block-services {
+    background-color: $color-grey4!important;
+
     &.bg-primary {
         .service-icon {
             color: $color-primary-darker;
@@ -22,8 +24,11 @@ main#blocks section.block-services {
         font-size: 25px;
         margin-bottom: 2px;
 
-        @media screen and (max-width: 767px) {
-            font-size: 19px;
+        @media screen and (max-width: 991px) {
+            font-size: 22px;
+        }
+        @media screen and (max-width: 867px) {
+            font-size: 20px;
         }
 
         @media screen and (max-width: 380px){
@@ -33,9 +38,11 @@ main#blocks section.block-services {
 
     .service-text {
         font-size: 24px;
-
-        @media screen and (max-width: 767px) {
-            font-size: 19px;
+        @media screen and (max-width: 991px) {
+            font-size: 22px;
+        }
+        @media screen and (max-width: 867px) {
+            font-size: 20px;
         }
         @media screen and (max-width: 380px){
             font-size: 18px!important;
