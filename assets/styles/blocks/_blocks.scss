@@ -1,6 +1,6 @@
 main#blocks {
     section {
-        padding: 4rem 3rem 4rem 3rem;
+        // padding: 4rem 3rem 4rem 3rem;
         position: relative;
         width: 100vw;
         background-size: cover!important;
@@ -22,7 +22,7 @@ main#blocks {
         }
 
         .section-title {
-            margin-bottom: 2rem;
+            padding: 50px 0;
             position: relative;
             text-align: center;
             text-transform: uppercase;

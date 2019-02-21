@@ -8,6 +8,11 @@
         padding-top: 3rem;
         padding-right: 9%;
 
+        .btn-outline-primary {
+            width: 360px;
+            line-height: 35px;
+        }
+
         @media screen and (max-width: 767px) {
             max-width: 100%;
             flex: inherit;
@@ -67,8 +72,8 @@
 
 .bg-primary {
     // padding: 1rem 3rem 3rem 3rem!important;
-
     background-size: cover;
+    background-color: $color-grey3!important;
 
     @media screen and (max-width: 767px) {
         background-image: inherit !important;
