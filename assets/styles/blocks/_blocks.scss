@@ -1,21 +1,8 @@
 main#blocks {
     section {
-        // padding: 4rem 3rem 4rem 3rem;
         position: relative;
         width: 100vw;
         background-size: cover!important;
-
-        // @media screen and (max-width: 767px) {
-        //     padding: 3rem 3rem 4rem 3rem;
-        // }
-
-        // @media screen and (max-width: 530px) {
-        //     padding: 5rem 0 4rem 0;
-        // }
-
-        // @media screen and (max-width: 430px) {
-        //     padding: 3rem 0 4rem 0;
-        // }
 
         .container {
             position: relative;
@@ -72,14 +59,14 @@ main#blocks {
             p {
                 font-size: 14px !important;
                 margin-bottom: .5rem;
-                color:#494949!important;
+                // color:$color-grey3!important;
             }
         }
     }
 
     section:nth-child(2) {
         // padding: 4rem 3rem 3rem 3rem !important;
-        background-color: $color-grey3!important;
+        background-color: $color-grey5!important;
         background-position: left;
             @media screen and (max-width: 991px) {
                 background-image:inherit!important;

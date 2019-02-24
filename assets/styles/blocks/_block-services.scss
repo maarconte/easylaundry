@@ -21,7 +21,7 @@ main#blocks section.block-services {
     }
 
     .service-title {
-        font-size: 25px;
+        font-size: 23px;
         margin-bottom: 2px;
         font-family: 'Roboto Slab', serif;
 
@@ -38,7 +38,9 @@ main#blocks section.block-services {
     }
 
     .service-text {
-        font-size: 24px;
+        font-size: 23px;
+        font-family: 'Roboto Slab',serif;
+
         @media screen and (max-width: 991px) {
             font-size: 22px;
         }
