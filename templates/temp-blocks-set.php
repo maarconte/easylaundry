@@ -38,7 +38,7 @@
 
                     <div class="row">
                             <div class="col-sm-6 block-prix">
-                                <p class="set-title">Kit <?php the_sub_field('title_set'); ?></p>
+                                <p class="set-title"><?php the_sub_field('title_set'); ?></p>
                                 <p class="set-price"><?php the_sub_field('price_set'); ?> €</p>
                             </div>
                             <div class="col-sm-6 block-nav-set">

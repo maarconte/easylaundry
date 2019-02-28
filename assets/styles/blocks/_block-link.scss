@@ -1,25 +1,35 @@
+
 .block-link {
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: bottom;
     position: relative;
-
+    
+    @media screen and (max-width: 991px) {
+        background-image:inherit!important;
+    }
     .block-title-link {
-        padding-top: 3rem;
+        padding-top: 100px;
         padding-right: 9%;
+        padding-bottom: 2.8rem;
+        @media screen and (max-width: 991px) {
+            padding-right: 15px;
+        }
 
         .btn-outline-primary {
             width: 360px;
             line-height: 35px;
+            font-size: 20px;
         }
 
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 991px) {
             max-width: 100%;
             flex: inherit;
+             
         }
 
         a {
-            @media screen and (max-width: 767px) {
+            @media screen and (max-width: 991px) {
                 display: block;
                 margin: auto;
             }
@@ -35,20 +45,21 @@
         color: $color-primary-darker;
 
         @media screen and (max-width: 1015px) {
-            font-size: 1.5rem !important;
-            line-height: 2rem;
+            // font-size: 1.5rem !important;
+            // line-height: 2rem;
             position: relative;
         }
 
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 991px) {
             font-size: 28px !important;
             line-height: 30px;
             text-align: center !important;
+            margin-bottom: 2rem!important;
         }
 
-        @media screen and (max-width: 390px) {
-            font-size: 25px !important;
-            line-height: 29px;
+        @media screen and (max-width: 480px) {
+            font-size: 22px!important;
+            line-height: 28px;
         }
     }
 
@@ -58,13 +69,13 @@
 }
 
 .Blanc {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 991px) {
         background-image: inherit !important;
     }
 
     .block-title-link {
-        @media screen and (max-width: 767px) {
-            padding-top: 0;
+        @media screen and (max-width: 867px) {
+            padding-top: 50px;
             padding-right: 15px;
         }
     }
@@ -84,23 +95,18 @@
         font-size: 22px !important;
         line-height: 35px !important;
     }
-    .asterisk {
-        p {
-            color:#fff!important;
-        }
-    }
 }
 
 .bg-secondary {
     // padding: 1rem 3rem 3rem 3rem!important;
     background-size: cover;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 991px) {
         background-image: inherit !important;
     }
 
     .block-title-link {
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 991px) {
             padding-right: 15px;
         }
     }

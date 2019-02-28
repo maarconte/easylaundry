@@ -1,11 +1,20 @@
 .block-text-image {
+    padding-bottom: 20px;
+
+    @media (min-width: 1200px){
+        .container {
+            max-width: 970px;
+        }
+    }
+
 
     @media screen and (max-width: 767px) {
         padding-top: 3rem !important;
     }
 
     .section-title {
-        margin-bottom: 40px !important;
+        // margin-bottom: 40px !important;
+        margin-bottom: 0;
 
         @media screen and (max-width: 430px) {
             margin-bottom: 2rem !important;
@@ -44,7 +53,12 @@
             }
 
             h4 {
-                font-size: 1.9rem;
+                font-size: 33px;
+
+                @media screen and (max-width: 767px) {
+                font-size: 26px;
+                margin-bottom: 0;
+                }
             }
 
             p {
@@ -62,13 +76,13 @@
         }
 
         &-image {
-            height: 310px;
+            height: 290px;
             overflow: hidden;
             position: relative;
             display: flex;
 
             @media screen and (max-width: 1000px) {
-                height: 310px;
+                height: 290px;
             }
 
             @media screen and (max-width: 950px) {
@@ -76,18 +90,19 @@
             }
 
             @media screen and (max-width: 767px) {
-                height: 275px;
+                height: 200px;
                 display: block;
                 max-width: 100%;
             }
 
-            @media screen and (max-width: 430px) {
-                height: 350px !important;
-            }
+            // @media screen and (max-width: 430px) {
+            //     height: 350px !important;
+            // }
 
             img {
                 display: block;
-                max-width: 100%;
+                max-width: 200px;
+                max-height: 200px;
                 margin: auto;
             }
         }

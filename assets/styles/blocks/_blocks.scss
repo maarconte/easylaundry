@@ -1,21 +1,8 @@
 main#blocks {
     section {
-        // padding: 4rem 3rem 4rem 3rem;
         position: relative;
         width: 100vw;
         background-size: cover!important;
-
-        @media screen and (max-width: 767px) {
-            padding: 3rem 3rem 4rem 3rem;
-        }
-
-        @media screen and (max-width: 530px) {
-            padding: 5rem 0 4rem 0;
-        }
-
-        @media screen and (max-width: 430px) {
-            padding: 3rem 0 4rem 0;
-        }
 
         .container {
             position: relative;
@@ -66,32 +53,75 @@ main#blocks {
         }
 
         .asterisk {
-            opacity: .5;
             margin-top: 20px;
 
             p {
                 font-size: 14px !important;
                 margin-bottom: .5rem;
+                color:$color-grey3!important;
             }
         }
     }
 
     section:nth-child(2) {
-        padding: 4rem 3rem 3rem 3rem !important;
+        // padding: 4rem 3rem 3rem 3rem !important;
+        background-color: $color-grey5!important;
+        background-position: left;
+            @media screen and (max-width: 991px) {
+                background-image:inherit!important;
+            }
 
+        .section-text {
+            font-size: 25px!important;
+            line-height: 32px!important;
+            text-align: left!important;
+            text-transform: initial!important;
+            color:#000;
+
+            @media screen and (max-width: 480px) {
+                font-size: 22px!important;
+                line-height: 28px;
+                text-align: center!important;
+            }
+        }
         .container {
             max-width: 540px;
 
             .block-title-link {
+                padding-top: 70px;
                 max-width: 100%;
                 flex: 100%;
-                padding-right: 0px;
+                // padding-right: 0px;
+                @media screen and (max-width: 867px) {
+                padding-top: 40px;
+                }
             }
         }
     }
 
     section:last-child {
-        padding: 1rem 3rem 3rem 3rem !important;
+        background-position: right;
+        background-color: $color-grey3!important;
+
+        @media screen and (max-width: 991px) {
+            background-image:inherit!important;
+        }
+
+        .block-title-link {
+            padding-top: 35px;
+            padding-bottom: 35px;
+        }
+        .section-text {
+            margin-bottom: 5px!important;
+
+            @media screen and (max-width: 991px) {
+                 margin-bottom: 20px!important;
+            }
+
+            p{
+                margin-bottom: 0!important;
+            }
+        }
     }
 }
 
@@ -109,3 +139,31 @@ main#blocks {
 @import "block-contact";
 @import "block-carousel";
 @import "block-set";
+
+
+.scrollToTop{
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    background-color: $color-white!important;
+    text-decoration: none;
+    position: absolute;
+    right: 4rem;
+    bottom: 16rem;
+    display: inline-block;
+    z-index: 2;
+    line-height: 65px;
+    font-size: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 13px rgba(0,0,0,.29);
+
+
+    @media screen and (max-width: 700px) {
+    font-size: 25px;
+    bottom: 14rem;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    } 
+}
