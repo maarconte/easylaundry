@@ -1,22 +1,23 @@
-
 .block-link {
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: bottom;
     position: relative;
-    
+
     @media screen and (max-width: 991px) {
-        background-image:inherit!important;
+        background-image: inherit !important;
     }
+
     .block-title-link {
         padding-top: 100px;
         padding-right: 9%;
         padding-bottom: 2.8rem;
+
         @media screen and (max-width: 991px) {
             padding-right: 15px;
         }
 
-        .btn-outline-primary {
+        .btn-outline-dark {
             width: 360px;
             line-height: 35px;
             font-size: 20px;
@@ -25,7 +26,6 @@
         @media screen and (max-width: 991px) {
             max-width: 100%;
             flex: inherit;
-             
         }
 
         a {
@@ -42,7 +42,9 @@
         margin-bottom: 1rem !important;
         text-align: left !important;
         text-transform: initial !important;
-        color: $color-primary-darker;
+
+        //color: $color-primary-darker;
+        font-weight: 300;
 
         @media screen and (max-width: 1015px) {
             // font-size: 1.5rem !important;
@@ -54,11 +56,11 @@
             font-size: 28px !important;
             line-height: 30px;
             text-align: center !important;
-            margin-bottom: 2rem!important;
+            margin-bottom: 2rem !important;
         }
 
         @media screen and (max-width: 480px) {
-            font-size: 22px!important;
+            font-size: 22px !important;
             line-height: 28px;
         }
     }
@@ -84,7 +86,7 @@
 .bg-primary {
     // padding: 1rem 3rem 3rem 3rem!important;
     background-size: cover;
-    background-color: $color-grey3!important;
+    background-color: $color-grey3 !important;
 
     @media screen and (max-width: 767px) {
         background-image: inherit !important;

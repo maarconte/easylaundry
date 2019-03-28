@@ -135,6 +135,10 @@ h6 {
     letter-spacing: 1px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montaga', serif;
+}
+
 /*=====  End of HEADINGS               ======*/
 
 address {
@@ -172,8 +176,7 @@ input:not([type="submit"]), textarea {
 
 .btn, button {
     border-radius: 0 !important;
-    text-transform: uppercase;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Montaga', serif;
 }
 
 .btn-outline-dark {

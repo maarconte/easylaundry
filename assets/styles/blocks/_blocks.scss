@@ -2,7 +2,7 @@ main#blocks {
     section {
         position: relative;
         width: 100vw;
-        background-size: cover!important;
+        background-size: cover !important;
 
         .container {
             position: relative;
@@ -12,7 +12,6 @@ main#blocks {
             padding: 50px 0;
             position: relative;
             text-align: center;
-            text-transform: uppercase;
             color: $color-primary;
             font-weight: 300;
 
@@ -54,36 +53,39 @@ main#blocks {
 
         .asterisk {
             margin-top: 20px;
+            font-weight: 300;
 
             p {
                 font-size: 14px !important;
                 margin-bottom: .5rem;
-                color:$color-grey3!important;
+                color: $color-grey3 !important;
             }
         }
     }
 
     section:nth-child(2) {
         // padding: 4rem 3rem 3rem 3rem !important;
-        background-color: $color-grey5!important;
+        background-color: #ECEFFF !important;
         background-position: left;
-            @media screen and (max-width: 991px) {
-                background-image:inherit!important;
-            }
+
+        @media screen and (max-width: 991px) {
+            background-image: inherit !important;
+        }
 
         .section-text {
-            font-size: 25px!important;
-            line-height: 32px!important;
-            text-align: left!important;
-            text-transform: initial!important;
-            color:#000;
+            font-size: 25px !important;
+            line-height: 32px !important;
+            text-align: left !important;
+            text-transform: initial !important;
+            color: #000;
 
             @media screen and (max-width: 480px) {
-                font-size: 22px!important;
+                font-size: 22px !important;
                 line-height: 28px;
-                text-align: center!important;
+                text-align: center !important;
             }
         }
+
         .container {
             max-width: 540px;
 
@@ -91,9 +93,10 @@ main#blocks {
                 padding-top: 70px;
                 max-width: 100%;
                 flex: 100%;
+
                 // padding-right: 0px;
                 @media screen and (max-width: 867px) {
-                padding-top: 40px;
+                    padding-top: 40px;
                 }
             }
         }
@@ -101,25 +104,26 @@ main#blocks {
 
     section:last-child {
         background-position: right;
-        background-color: $color-grey3!important;
+        background-color: $color-grey3 !important;
 
         @media screen and (max-width: 991px) {
-            background-image:inherit!important;
+            background-image: inherit !important;
         }
 
         .block-title-link {
             padding-top: 35px;
             padding-bottom: 35px;
         }
+
         .section-text {
-            margin-bottom: 5px!important;
+            margin-bottom: 5px !important;
 
             @media screen and (max-width: 991px) {
-                 margin-bottom: 20px!important;
+                margin-bottom: 20px !important;
             }
 
-            p{
-                margin-bottom: 0!important;
+            p {
+                margin-bottom: 0 !important;
             }
         }
     }
@@ -140,12 +144,11 @@ main#blocks {
 @import "block-carousel";
 @import "block-set";
 
-
-.scrollToTop{
+.scrollToTop {
     width: 65px;
     height: 65px;
     text-align: center;
-    background-color: $color-white!important;
+    background-color: $color-white !important;
     text-decoration: none;
     position: absolute;
     right: 4rem;
@@ -156,14 +159,13 @@ main#blocks {
     font-size: 30px;
     border-radius: 50%;
     cursor: pointer;
-    box-shadow: 0 4px 13px rgba(0,0,0,.29);
-
+    box-shadow: 0 4px 13px rgba(0, 0, 0, 0.29);
 
     @media screen and (max-width: 700px) {
-    font-size: 25px;
-    bottom: 14rem;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    } 
+        font-size: 25px;
+        bottom: 14rem;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
 }
