@@ -2,17 +2,17 @@
     padding-bottom: 4rem;
 
     .section-title {
-        color: #fff !important;
+        color: $color-black !important;
         margin-bottom: 50px;
 
         @media screen and (max-width: 991px) {
-          margin-bottom: 10px;
-        } 
+            margin-bottom: 10px;
+        }
     }
 
     .set {
         &-title, &-price {
-            color: $color-secondary;
+            color: $color-black;
             margin: 0;
             font-family: 'Roboto', sans-serif;
             font-weight: 300;
@@ -88,12 +88,12 @@
                 font-size: 20px;
 
                 @media screen and (max-width: 991px) {
-                width: 325px;
+                    width: 325px;
                 }
-                
+
                 @media screen and (max-width: 867px) {
-                width: 295px;
-                }  
+                    width: 295px;
+                }
             }
 
             ul {
@@ -102,7 +102,7 @@
 
                 @media screen and (max-width: 867px) {
                     margin-bottom: 55px;
-                } 
+                }
 
                 li {
                     padding-left: 2em;
@@ -112,8 +112,8 @@
 
                     @media screen and (max-width: 991px) {
                         font-size: 21px;
-                         margin-bottom: 6px;
-                    } 
+                        margin-bottom: 6px;
+                    }
                 }
 
                 li:before {

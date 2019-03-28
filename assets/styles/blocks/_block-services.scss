@@ -1,5 +1,5 @@
 main#blocks section.block-services {
-    background-color: $color-grey4!important;
+    background-color: $color-grey4 !important;
 
     &.bg-primary {
         .service-icon {
@@ -14,10 +14,11 @@ main#blocks section.block-services {
             }
         }
     }
+
     .row {
         justify-content: center;
         max-width: 519px;
-        margin: auto!important;
+        margin: auto !important;
     }
 
     .service-title {
@@ -28,12 +29,13 @@ main#blocks section.block-services {
         @media screen and (max-width: 991px) {
             font-size: 22px;
         }
+
         @media screen and (max-width: 867px) {
             font-size: 20px;
         }
 
-        @media screen and (max-width: 380px){
-            font-size: 18px!important;
+        @media screen and (max-width: 380px) {
+            font-size: 18px !important;
         }
     }
 
@@ -44,11 +46,13 @@ main#blocks section.block-services {
         @media screen and (max-width: 991px) {
             font-size: 22px;
         }
+
         @media screen and (max-width: 867px) {
             font-size: 20px;
         }
-        @media screen and (max-width: 380px){
-            font-size: 18px!important;
+
+        @media screen and (max-width: 380px) {
+            font-size: 18px !important;
         }
     }
 
