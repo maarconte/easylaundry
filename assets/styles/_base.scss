@@ -377,12 +377,15 @@ input:not([type="submit"]), textarea {
 }
 
 .woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
-    margin: 0 2.8% 2.992em 0;
-    width: 34%;
+    margin: 10px!important;
+    width: 40%!important;
+    display: inline-block!important;
+    float: inherit!important;
 }
 
 .woocommerce .products ul, .woocommerce ul.products {
-    display: flex;
+    display: inherit!important;
+    text-align: center;
 }
 
 .woocommerce-page .site-content {
