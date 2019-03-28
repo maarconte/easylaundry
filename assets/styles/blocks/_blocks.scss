@@ -66,7 +66,8 @@ main#blocks {
     section:nth-child(2) {
         background-color: #ECEFFF!important;
         background-position: left;
-
+        
+       
         @media screen and (max-width: 991px) {
             background-image: inherit !important;
         }
@@ -104,6 +105,7 @@ main#blocks {
     section:last-child {
         background-position: right;
         background-color: $color-grey3 !important;
+        color:#414a8d!important;
 
         @media screen and (max-width: 991px) {
             background-image: inherit !important;
@@ -123,6 +125,7 @@ main#blocks {
 
             p {
                 margin-bottom: 0 !important;
+                color:#414a8d!important;
             }
         }
     }
