@@ -11,7 +11,7 @@
  */
  ?>
 
- <section class="block-sets bg-primary">
+ <section class="block-sets">
  <div class="container">
         <!-- Title -->
         <?php if(get_sub_field('title') ) : ?>
