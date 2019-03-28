@@ -380,7 +380,7 @@ input:not([type="submit"]), textarea {
     margin: 10px!important;
     width: 40%!important;
     display: inline-block!important;
-    float: inherit!important;
+    float: initial!important;
 }
 
 .woocommerce .products ul, .woocommerce ul.products {
