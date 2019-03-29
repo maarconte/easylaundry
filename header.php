@@ -54,7 +54,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         ?>
     </div>
 
-    <a class="btn-menu" href="http://easylaundry.fr/categorie-produit/pack/">Passer commande</a>
+    <a class="btn-menu" href="https://easylaundry.fr/boutique">Passer commande</a>
 </div>
 </nav>
 <script>
