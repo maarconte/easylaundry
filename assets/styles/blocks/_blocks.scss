@@ -111,6 +111,16 @@ main#blocks {
             background-image: inherit !important;
         }
 
+        .btn-outline-dark {
+            color: #414a8d !important;
+            border-color: #414a8d !important;
+
+            &:hover {
+                color: #fff !important;
+                background-color: #414a8d !important;
+            }
+        }
+
         .block-title-link {
             padding-top: 35px;
             padding-bottom: 35px;
@@ -118,7 +128,6 @@ main#blocks {
 
         .section-text {
             margin-bottom: 5px !important;
-            color: #414a8d !important;
 
             @media screen and (max-width: 991px) {
                 margin-bottom: 20px !important;
@@ -127,15 +136,6 @@ main#blocks {
             p {
                 margin-bottom: 0 !important;
                 color: #414a8d !important;
-            }
-
-            .btn-outline-dark {
-                color: #414a8d !important;
-                border-color: #414a8d !important;
-
-                &:hover {
-                    background-color: #414a8d !important;
-                }
             }
         }
     }
