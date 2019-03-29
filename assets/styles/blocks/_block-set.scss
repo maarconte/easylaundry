@@ -13,7 +13,7 @@
 
     .set {
         &-title, &-price {
-            color: $color-black;
+            color: #000;
             margin: 0;
             font-family: Montserrat, sans-serif !important;
             font-weight: 300;
@@ -52,8 +52,8 @@
                 border-radius: 0 !important;
                 flex-grow: 1;
                 text-align: center;
-                color: #000;
-                border-color: #000 !important;
+                color: $color-black;
+                border-color: $color-black !important;
                 margin-right: -1px;
                 line-height: 35px;
                 font-family: Montaga,serif;
@@ -64,7 +64,7 @@
 
                 &.active, &:hover {
                     color: #fff;
-                    background-color: #000;
+                    background-color: $color-black;
                 }
             }
         }

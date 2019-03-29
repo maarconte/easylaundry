@@ -33,7 +33,7 @@ nav.navbar {
     }
 
     .info-header {
-        border-left: 1px solid #000 !important;
+        border-left: 1px solid $color-black !important;
 
         @media screen and (max-width: 767px) {
             font-size: 15px !important;
@@ -118,11 +118,11 @@ nav.navbar {
     .btn-menu {
         background-color: $color-black;
         font-family: Montaga,serif;
-    font-weight: 700;
-    line-height: 44.5px;
-    padding: 0 19px;
-    color: #fff;
-    border: 0;
+        font-weight: 700;
+        line-height: 44.5px;
+        padding: 0 19px;
+        color: #fff;
+        border: 0;
 
         @media screen and (max-width: 967px) {
             line-height: 60.5px;
