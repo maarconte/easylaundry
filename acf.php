@@ -1991,7 +1991,7 @@ acf_add_local_field_group(array(
 									'default_value' => '',
 									'tabs' => 'all',
 									'media_upload' => 1,
-									'toolbar' => 'basic',
+									'toolbar' => 'full',
 									'delay' => 0,
 								),
 								array(
