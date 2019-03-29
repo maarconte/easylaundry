@@ -180,13 +180,13 @@ input:not([type="submit"]), textarea {
 }
 
 .btn-outline-dark {
-    color: $color-black !important;
-    border-color: $color-black !important;
+    color: $color-black;
+    border-color: $color-black;
 
     &:hover {
-        color: #fff !important;
-        border-color: $color-black !important;
-        background-color: $color-black !important;
+        color: #fff;
+        border-color: $color-black;
+        background-color: $color-black;
     }
 }
 
