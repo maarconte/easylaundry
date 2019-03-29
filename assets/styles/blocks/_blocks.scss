@@ -64,10 +64,10 @@ main#blocks {
     }
 
     section:nth-child(2) {
-        // padding: 4rem 3rem 3rem 3rem !important;
-        background-color: #ECEFFF !important;
+        background-color: #ECEFFF!important;
         background-position: left;
-
+        
+       
         @media screen and (max-width: 991px) {
             background-image: inherit !important;
         }
@@ -105,6 +105,7 @@ main#blocks {
     section:last-child {
         background-position: right;
         background-color: $color-grey3 !important;
+        color:#414a8d!important;
 
         @media screen and (max-width: 991px) {
             background-image: inherit !important;
@@ -117,6 +118,8 @@ main#blocks {
 
         .section-text {
             margin-bottom: 5px !important;
+            color:#414a8d!important;
+
 
             @media screen and (max-width: 991px) {
                 margin-bottom: 20px !important;
@@ -124,6 +127,7 @@ main#blocks {
 
             p {
                 margin-bottom: 0 !important;
+                color:#414a8d!important;
             }
         }
     }

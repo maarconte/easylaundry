@@ -1,5 +1,6 @@
 .block-sets {
     padding-bottom: 4rem;
+    background-color: #f8f8f8;
 
     .section-title {
         color: $color-black !important;
@@ -14,12 +15,12 @@
         &-title, &-price {
             color: $color-black;
             margin: 0;
-            font-family: 'Roboto', sans-serif;
+            font-family: Montserrat,sans-serif!important;
             font-weight: 300;
         }
 
         &-title {
-            font-size: 2rem;
+            font-size: 1.5rem;
 
             @media screen and (max-width: 767px) {
                 text-align: center;
@@ -27,7 +28,7 @@
         }
 
         &-price {
-            font-size: 8rem;
+            font-size: 6rem;
 
             @media screen and (max-width: 930px) {
                 font-size: 6rem;
@@ -55,6 +56,7 @@
                 border-color: #000 !important;
                 margin-right: -1px;
                 line-height: 35px;
+                font-family: Montaga,serif;
 
                 &:hover {
                     cursor: pointer;

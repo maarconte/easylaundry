@@ -117,17 +117,12 @@ nav.navbar {
 
     .btn-menu {
         background-color: $color-black;
-        color: #fff;
-        text-transform: uppercase;
-        height: 100%;
-        padding: 0 30px;
-        border: 0;
-        font-family: 'Roboto Slab', serif;
-        position: absolute;
-        right: 0;
-        font-weight: 700;
-        line-height: 67.5px;
-        top: 0 !important;
+        font-family: Montaga,serif;
+    font-weight: 700;
+    line-height: 44.5px;
+    padding: 0 19px;
+    color: #fff;
+    border: 0;
 
         @media screen and (max-width: 967px) {
             line-height: 60.5px;
