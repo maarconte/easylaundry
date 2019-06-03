@@ -78,12 +78,7 @@ nav.navbar {
   }
 
   .navbar-brand {
-    align-items: center;
-    display: flex;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 22px !important;
-
+    color: $color-primary;
     @include mobile {
       font-size: 0.8rem;
     }
@@ -112,48 +107,5 @@ nav.navbar {
       top: 4.4rem;
       height: inherit;
     }
-  }
-
-  .btn-menu {
-    background-color: $color-black;
-    font-weight: 700;
-    line-height: 44.5px;
-    padding: 0 19px;
-    color: #fff;
-    border: 0;
-
-    @media screen and (max-width: 967px) {
-      line-height: 60.5px;
-    }
-
-    @media screen and (max-width: 867px) {
-      line-height: 54.5px;
-    }
-
-    @media screen and (max-width: 767px) {
-      line-height: 75.5px;
-      font-size: 15px;
-    }
-
-    @media screen and (max-width: 667px) {
-      line-height: 65.5px;
-    }
-
-    @media screen and (max-width: 490px) {
-      line-height: 49.5px;
-    }
-
-    @media screen and (max-width: 450px) {
-      line-height: 41.5px;
-      font-size: 12px;
-    }
-
-    @media screen and (max-width: 350px) {
-      line-height: 35.5px;
-    }
-  }
-
-  .info-header {
-    font-family: "Roboto", sans-serif;
   }
 }

@@ -53,8 +53,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                    }
         ?>
     </div>
-
-    <a class="btn-menu" href="https://easylaundry.fr/boutique">Passer commande</a>
+<div class="ml-auto">
+    <a class="btn btn-outline-primary mr-2" href="https://easylaundry.fr/boutique">nous contacter</a>
+    <a class="btn btn-primary" href="https://easylaundry.fr/boutique">un mois d'essai</a>
+</div>
 </div>
 </nav>
 <script>
