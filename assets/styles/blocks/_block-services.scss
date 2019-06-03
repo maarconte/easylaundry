@@ -1,72 +1,70 @@
 main#blocks section.block-services {
-    background-color: $color-grey4 !important;
+  background-color: $color-grey !important;
 
-    &.bg-primary {
-        .service-icon {
-            color: $color-primary-darker;
+  &.bg-primary {
+    .service-icon {
+      color: $color-primary-darker;
 
-            @media screen and (max-width: 767px) {
-                max-width: 80%;
-            }
+      @media screen and (max-width: 767px) {
+        max-width: 80%;
+      }
 
-            @media screen and (max-width: 340px) {
-                margin-top: 0.6rem;
-            }
-        }
+      @media screen and (max-width: 340px) {
+        margin-top: 0.6rem;
+      }
+    }
+  }
+
+  .row {
+    justify-content: center;
+    max-width: 519px;
+    margin: auto !important;
+  }
+
+  .service-title {
+    font-size: 23px;
+    margin-bottom: 2px;
+
+    @media screen and (max-width: 991px) {
+      font-size: 22px;
     }
 
-    .row {
-        justify-content: center;
-        max-width: 519px;
-        margin: auto !important;
+    @media screen and (max-width: 867px) {
+      font-size: 20px;
     }
 
-    .service-title {
-        font-size: 23px;
-        margin-bottom: 2px;
-        font-family: Montaga,serif;
+    @media screen and (max-width: 380px) {
+      font-size: 18px !important;
+    }
+  }
 
-        @media screen and (max-width: 991px) {
-            font-size: 22px;
-        }
+  .service-text {
+    font-size: 23px;
 
-        @media screen and (max-width: 867px) {
-            font-size: 20px;
-        }
-
-        @media screen and (max-width: 380px) {
-            font-size: 18px !important;
-        }
+    @media screen and (max-width: 991px) {
+      font-size: 22px;
     }
 
-    .service-text {
-        font-size: 23px;
-        font-family: Montaga,serif;
-
-        @media screen and (max-width: 991px) {
-            font-size: 22px;
-        }
-
-        @media screen and (max-width: 867px) {
-            font-size: 20px;
-        }
-
-        @media screen and (max-width: 380px) {
-            font-size: 18px !important;
-        }
+    @media screen and (max-width: 867px) {
+      font-size: 20px;
     }
 
-    .service {
-        margin-bottom: 2rem;
-
-        @media screen and (max-width: 530px) {
-            margin-bottom: 2rem !important;
-        }
-
-        &-icon {
-            max-width: 100%;
-            margin: 0 auto;
-            display: block;
-        }
+    @media screen and (max-width: 380px) {
+      font-size: 18px !important;
     }
+  }
+
+  .service {
+    margin-bottom: 2rem;
+
+    @media screen and (max-width: 530px) {
+      margin-bottom: 2rem !important;
+    }
+
+    &-icon {
+      max-width: 100%;
+      margin: 0 auto;
+      display: block;
+    }
+  }
 }

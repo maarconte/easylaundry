@@ -26,40 +26,40 @@
 ==================================================================================*/
 
 main {
-    position: relative;
-    margin-top: $header_height;
+  position: relative;
+  margin-top: $header_height;
 
-    article,
-    .element {
-        padding: 1rem 0;
-    }
+  article,
+  .element {
+    padding: 1rem 0;
+  }
 }
 
 aside {
-    position: relative;
-    margin-top: $header_height;
+  position: relative;
+  margin-top: $header_height;
 
-    .widget {
-        padding: 1rem 0;
-        border-bottom: 1px solid $color-grey;
+  .widget {
+    padding: 1rem 0;
+    border-bottom: 1px solid $color-grey;
 
-        .nav-link {
-            padding: 0 0 0.5rem 0;
-        }
+    .nav-link {
+      padding: 0 0 0.5rem 0;
     }
+  }
 }
 
 article,
 .element,
 nav,
 footer .inner {
-    // width: $element_width;
-    //  max-width: $element_maxwidth;
-    margin: 0 auto;
+  // width: $element_width;
+  //  max-width: $element_maxwidth;
+  margin: 0 auto;
 
-    @include mobile {
-        width: $element_width_mobile;
-    }
+  @include mobile {
+    width: $element_width_mobile;
+  }
 }
 
 /*==================================================================================
@@ -78,22 +78,22 @@ footer .inner {
 /––––––––––––––––––––––––*/
 //=> templates/wp-page.php
 main#page {
-    section {
-        .element.teaser {
-            width: 100vw;
-            max-width: 100vw;
-            height: 25rem;
-            padding: 0;
+  section {
+    .element.teaser {
+      width: 100vw;
+      max-width: 100vw;
+      height: 25rem;
+      padding: 0;
 
-            img,
-            .modernizr-of {
-                width: 100%;
-                height: 100%;
-                background-size: cover; // modernizr
-                object-fit: cover;
-            }
-        }
+      img,
+      .modernizr-of {
+        width: 100%;
+        height: 100%;
+        background-size: cover; // modernizr
+        object-fit: cover;
+      }
     }
+  }
 }
 
 /* BLOG & POST
@@ -102,62 +102,62 @@ main#page {
 //=> templates/wp-single.php
 
 .postinfo {
-    font-size: 0.7rem;
+  font-size: 0.7rem;
 }
 
 main#blog {
-    section {
-        article {
-            img,
-            .modernizr-of {
-                width: 100%;
-                height: 100%;
-                background-size: cover;
-                object-fit: cover;
-            }
-        }
-
-        .pagination {
-            justify-content: center;
-        }
+  section {
+    article {
+      img,
+      .modernizr-of {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        object-fit: cover;
+      }
     }
+
+    .pagination {
+      justify-content: center;
+    }
+  }
 }
 
 main#post {
-    section {
-        article {
-            img,
-            .modernizr-of {
-                max-width: 100%;
+  section {
+    article {
+      img,
+      .modernizr-of {
+        max-width: 100%;
 
-                // height: 20rem;
-                background-size: cover; // modernizr
-                object-fit: cover;
-            }
+        // height: 20rem;
+        background-size: cover; // modernizr
+        object-fit: cover;
+      }
 
-            .postinfo {
-                margin-bottom: 0.5rem;
-            }
+      .postinfo {
+        margin-bottom: 0.5rem;
+      }
 
-            dl,
-            ol,
-            ul {
-                padding-left: 2rem;
-            }
+      dl,
+      ol,
+      ul {
+        padding-left: 2rem;
+      }
 
-            h2 {
-                @include heading-size(3);
-            }
+      h2 {
+        @include heading-size(3);
+      }
 
-            h3 {
-                @include heading-size(2);
-            }
+      h3 {
+        @include heading-size(2);
+      }
 
-            h4 {
-                @include heading-size(1);
-            }
-        }
+      h4 {
+        @include heading-size(1);
+      }
     }
+  }
 }
 
 /* TEMPLATE - SUBSITES
@@ -165,33 +165,32 @@ main#post {
 //=> templates/subsites.php
 
 main#subsites {
-    section {
-        .element.sites {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
+  section {
+    .element.sites {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
 
-            .site {
-                flex-basis: calc((100% / 3) - 1rem);
-                margin-bottom: 1rem;
+      .site {
+        flex-basis: calc((100% / 3) - 1rem);
+        margin-bottom: 1rem;
 
-                @include mobile {
-                    flex-basis: 100%;
-                }
-
-
-                img,
-                .modernizr-of {
-                    width: 100%;
-                    height: 5rem;
-                    background-size: cover; // modernizr
-
-                    object-fit: cover;
-                }
-            }
+        @include mobile {
+          flex-basis: 100%;
         }
+
+        img,
+        .modernizr-of {
+          width: 100%;
+          height: 5rem;
+          background-size: cover; // modernizr
+
+          object-fit: cover;
+        }
+      }
     }
+  }
 }
 
 /*==================================================================================
@@ -199,87 +198,87 @@ main#subsites {
 ==================================================================================*/
 
 .footer {
-    width: 100vw;
-    margin-top: auto;
-    color: $color-grey;
-    background: $color-black;
+  width: 100vw;
+  margin-top: auto;
+  color: $color-grey;
+  background: $color-black;
 
-    .row {
-        @media screen and (max-width: 767px) {
-            display: inherit;
-        }
+  .row {
+    @media screen and (max-width: 767px) {
+      display: inherit;
+    }
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .widget-title {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+
+    @media screen and (max-width: 767px) {
+      font-size: 1rem;
+      margin-bottom: 0.3rem !important;
+    }
+  }
+
+  .widget_nav_menu {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px !important;
+    }
+  }
+
+  .nav {
+    padding: 0;
+
+    @media screen and (max-width: 530px) {
+      font-size: 15px;
     }
 
-    .logo {
-        width: 50px;
-        height: 50px;
+    .nav-link {
+      color: $color-grey;
+      padding: 0 0 0.5rem 0;
     }
+  }
 
-    .widget-title {
+  .inner {
+    padding: 1.5rem 0;
+    font-size: 0.8rem;
+    text-align: center;
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+  }
+
+  .credits {
+    background-color: $color-black;
+    color: $color-grey1;
+    text-align: center;
+    display: none;
+
+    a {
+      color: $color-grey1;
+    }
+  }
+
+  .custom-menu-class {
+    width: 100%;
+    #menu-footer {
+      margin: 0;
+    }
+    li {
+      display: inline-block;
+      padding: 0 15px;
+      a {
         color: #fff;
-        font-weight: 700;
-        margin-bottom: 1.5rem;
-        text-transform: uppercase;
-        font-size: 1rem;
-
-        @media screen and (max-width: 767px) {
-            font-size: 1rem;
-            margin-bottom: 0.3rem !important;
-        }
+        font-size: 16px;
+      }
     }
-
-    .widget_nav_menu {
-        @media screen and (max-width: 767px) {
-            margin-bottom: 20px !important;
-        }
-    }
-
-    .nav {
-        padding: 0;
-
-        @media screen and (max-width: 530px) {
-            font-size: 15px;
-        }
-
-        .nav-link {
-            color: $color-light;
-            padding: 0 0 0.5rem 0;
-        }
-    }
-
-    .inner {
-        padding: 1.5rem 0;
-        font-size: 0.8rem;
-        text-align: center;
-
-        @media screen and (max-width: 767px) {
-            width: 100%;
-        }
-    }
-
-    .credits {
-        background-color: $color-black;
-        color: $color-grey2;
-        text-align: center;
-        display: none;
-
-        a {
-            color: $color-grey2;
-        }
-    }
-
-    .custom-menu-class {
-        width: 100%;
-         #menu-footer{
-             margin: 0;
-         }
-        li{
-        display: inline-block;
-        padding: 0 15px;
-          a{
-              color:#fff;
-              font-size:16px; 
-          }
-        }
-    }   
+  }
 }

@@ -14,149 +14,146 @@
   NAV
 ==================================================================================*/
 nav.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: $header_height;
-    z-index: 999999;
-    padding: 0 50px;
-    background-color: #fff;
-    box-shadow: 0 4px 13px rgba(0, 0, 0, 0.29);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: $header_height;
+  z-index: 999999;
+  padding: 0 50px;
+  background-color: #fff;
+  box-shadow: 0 4px 13px rgba(0, 0, 0, 0.29);
+
+  @media screen and (max-width: 767px) {
+    height: 3rem;
+  }
+
+  @media screen and (max-width: 440px) {
+    padding-left: 10px !important;
+  }
+
+  .info-header {
+    border-left: 1px solid $color-black !important;
 
     @media screen and (max-width: 767px) {
-        height: 3rem;
+      font-size: 15px !important;
+    }
+
+    @media screen and (max-width: 722px) {
+      display: none;
+    }
+  }
+
+  .container {
+    @include mobile {
+      max-width: 700px !important;
+    }
+
+    @media (min-width: 1200px) {
+      max-width: 1170px;
+    }
+  }
+
+  .navbar-collapse {
+    flex-grow: inherit !important;
+  }
+
+  .navbar-collapse.show {
+    width: 100vw;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: $header_height;
+    padding: 20px 55px;
+    text-align: center;
+
+    @media screen and (max-width: 440px) {
+      padding: 18px 25px;
+      top: 4.4rem;
+    }
+
+    a {
+      color: #fff;
+    }
+  }
+
+  .navbar-brand {
+    align-items: center;
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 22px !important;
+
+    @include mobile {
+      font-size: 0.8rem;
     }
 
     @media screen and (max-width: 440px) {
-        padding-left: 10px !important;
+      font-size: 20px !important;
+    }
+  }
+
+  .navbar-menu {
+    @media screen and (max-width: 992px) {
+      background-color: #f8f9fa !important;
+      padding: 20px 56px;
+      text-align: center;
+      position: absolute;
+      top: 4rem;
+      left: 0;
+      width: 100%;
     }
 
-    .info-header {
-        border-left: 1px solid $color-black !important;
-
-        @media screen and (max-width: 767px) {
-            font-size: 15px !important;
-        }
-
-        @media screen and (max-width: 722px) {
-            display: none;
-        }
+    @media screen and (max-width: 680px) {
+      font-size: 19px !important;
     }
 
-    .container {
-        @include mobile {
-            max-width: 700px !important;
-        }
+    @media screen and (max-width: 440px) {
+      top: 4.4rem;
+      height: inherit;
+    }
+  }
 
+  .btn-menu {
+    background-color: $color-black;
+    font-weight: 700;
+    line-height: 44.5px;
+    padding: 0 19px;
+    color: #fff;
+    border: 0;
 
-        @media (min-width: 1200px) {
-            max-width: 1170px;
-        }
+    @media screen and (max-width: 967px) {
+      line-height: 60.5px;
     }
 
-    .navbar-collapse {
-        flex-grow: inherit !important;
+    @media screen and (max-width: 867px) {
+      line-height: 54.5px;
     }
 
-    .navbar-collapse.show {
-        width: 100vw;
-        width: 100%;
-        position: absolute;
-        left: 0;
-        top: $header_height;
-        padding: 20px 55px;
-        text-align: center;
-
-        @media screen and (max-width: 440px) {
-            padding: 18px 25px;
-            top: 4.4rem;
-        }
-
-        a {
-            color: #fff;
-        }
+    @media screen and (max-width: 767px) {
+      line-height: 75.5px;
+      font-size: 15px;
     }
 
-    .navbar-brand {
-        align-items: center;
-        display: flex;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 400;
-        font-size: 22px !important;
-
-        @include mobile {
-            font-size: .8rem;
-        }
-
-
-        @media screen and (max-width: 440px) {
-            font-size: 20px !important;
-        }
+    @media screen and (max-width: 667px) {
+      line-height: 65.5px;
     }
 
-    .navbar-menu {
-        @media screen and (max-width: 992px) {
-            background-color: #f8f9fa !important;
-            padding: 20px 56px;
-            text-align: center;
-            position: absolute;
-            top: 4rem;
-            left: 0;
-            width: 100%;
-        }
-
-        @media screen and (max-width: 680px) {
-            font-size: 19px !important;
-        }
-
-        @media screen and (max-width: 440px) {
-            top: 4.4rem;
-            height: inherit;
-        }
+    @media screen and (max-width: 490px) {
+      line-height: 49.5px;
     }
 
-    .btn-menu {
-        background-color: $color-black;
-        font-family: Montaga,serif;
-        font-weight: 700;
-        line-height: 44.5px;
-        padding: 0 19px;
-        color: #fff;
-        border: 0;
-
-        @media screen and (max-width: 967px) {
-            line-height: 60.5px;
-        }
-
-        @media screen and (max-width: 867px) {
-            line-height: 54.5px;
-        }
-
-        @media screen and (max-width: 767px) {
-            line-height: 75.5px;
-            font-size: 15px;
-        }
-
-        @media screen and (max-width: 667px) {
-            line-height: 65.5px;
-        }
-
-        @media screen and (max-width: 490px) {
-            line-height: 49.5px;
-        }
-
-        @media screen and (max-width: 450px) {
-            line-height: 41.5px;
-            font-size: 12px;
-        }
-
-        @media screen and (max-width: 350px) {
-            line-height: 35.5px;
-        }
+    @media screen and (max-width: 450px) {
+      line-height: 41.5px;
+      font-size: 12px;
     }
 
-    .info-header {
-        font-family: 'Roboto', sans-serif;
+    @media screen and (max-width: 350px) {
+      line-height: 35.5px;
     }
+  }
+
+  .info-header {
+    font-family: "Roboto", sans-serif;
+  }
 }

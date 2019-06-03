@@ -19,76 +19,75 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: contain;
-    -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
-    max-width: 100vw;
-    height: 100%;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    font-family: $html__fontname !important;
-    font-size: $base_size; // only used for rem-handling, the actual font-size is $body__fontsize
+  max-width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  font-family: $html__fontname !important;
+  font-size: $base_size; // only used for rem-handling, the actual font-size is $body__fontsize
 
-    @include vpw_min($scaling_endpoint) {
-        font-size: $scaling_endpoint / 100 * stripunit($base_size);
-    }
+  @include vpw_min($scaling_endpoint) {
+    font-size: $scaling_endpoint / 100 * stripunit($base_size);
+  }
 
+  @include mobile {
+    font-size: $base_size_mobile;
+  }
 
-    @include mobile {
-        font-size: $base_size_mobile;
-    }
-
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-    // used as wrapper for sticky footer
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    font-size: $body__fontsize;
-    font-weight: $body__fontweight;
-    line-height: $body__lineheight;
-    font-family: $html__fontname !important;
-    background-color: $html__bgcolor;
-    color: $html__textcolor !important;
+  // used as wrapper for sticky footer
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  font-size: $body__fontsize;
+  font-weight: $body__fontweight;
+  line-height: $body__lineheight;
+  font-family: $html__fontname !important;
+  background-color: $html__bgcolor;
+  color: $html__textcolor !important;
 
-    @include mobile {
-        font-size: $body__fontsize_mobile;
-    }
+  @include mobile {
+    font-size: $body__fontsize_mobile;
+  }
 }
 
 a {
-    color: $a__linkcolor;
-    text-decoration: $a__textdecoration;
-    transition: $transition_fast;
+  color: $a__linkcolor;
+  text-decoration: $a__textdecoration;
+  transition: $transition_fast;
 
-    &:hover {
-        color: $a__hovercolor;
-    }
+  &:hover {
+    color: $a__hovercolor;
+  }
 }
 
 header {
-    margin-top: $header_height;
+  margin-top: $header_height;
 }
 
 :focus {
-    outline: 0;
+  outline: 0;
 }
 
 .pointer:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /*=============================================
@@ -96,57 +95,64 @@ header {
 =============================================*/
 
 h1 {
-    @include heading-size(6);
-    @include mobile {
-        @include heading-size(4);
-    }
+  font-weight: 500;
+  @include heading-size(6);
+  @include mobile {
+    @include heading-size(4);
+  }
 }
 
 h2 {
-    @include heading-size(5);
-    @include mobile {
-        @include heading-size(3);
-    }
+  font-weight: 400;
+  @include heading-size(5);
+  @include mobile {
+    @include heading-size(3);
+  }
 }
 
 h3 {
-    @include heading-size(4);
-    @include mobile {
-        @include heading-size(2);
-    }
+  @include heading-size(4);
+  @include mobile {
+    @include heading-size(2);
+  }
 }
 
 h4 {
-    @include heading-size(3);
-    @include mobile {
-        @include heading-size(2);
-    }
+  @include heading-size(3);
+  @include mobile {
+    @include heading-size(2);
+  }
 }
 
 h5 {
-    @include heading-size(2);
+  @include heading-size(2);
 
-    letter-spacing: 1px;
+  letter-spacing: 1px;
 }
 
 h6 {
-    @include heading-size(1);
+  @include heading-size(1);
 
-    letter-spacing: 1px;
+  letter-spacing: 1px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montaga', serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", serif;
 }
 
 /*=====  End of HEADINGS               ======*/
 
 address {
-    font-style: normal;
+  font-style: normal;
 }
 
 table {
-    border-collapse: collapse;
+  border-collapse: collapse;
 }
 
 /*==================================================================================
@@ -155,39 +161,59 @@ table {
 
 // defaut wowjs div
 .wow {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 // anchor div to fix .top overlap when navigation through 'domain.tld/#anchor'
 .anchor {
-    display: block;
-    height: $header_height;
-    margin-top: -$header_height; // negative top_height
+  display: block;
+  height: $header_height;
+  margin-top: -$header_height; // negative top_height
 }
 
 /*=============================================
 =            Forms            =
 =============================================*/
 
-input:not([type="submit"]), textarea {
-    background-color: rgba($color-dark, 0.1) !important;
-    border: none !important;
+input:not([type="submit"]),
+textarea {
+  background-color: rgba($color-dark, 0.1) !important;
+  border: none !important;
 }
 
-.btn, button {
-    border-radius: 0 !important;
-    font-family: 'Montaga', serif;
+.btn,
+button {
+  border-radius: 5px;
+  &:active,
+  &:focus {
+    box-shadow: none !important;
+  }
 }
 
-.btn-outline-dark {
-    color: $color-black;
-    border-color: $color-black;
+.btn-primary {
+  background-color: $color-primary;
+  border-color: $color-primary;
+  color: $color-white;
+  &:focus,
+  &:active,
+  &:hover {
+    background-color: transparent !important;
+    color: $color-primary !important;
+    border-color: $color-primary !important;
+  }
+}
 
-    &:hover {
-        color: #fff;
-        border-color: $color-black;
-        background-color: $color-black;
-    }
+.btn-outline-primary {
+  color: $color-primary;
+  border-color: $color-primary;
+
+  &:focus,
+  &:active,
+  &:hover {
+    background-color: $color-primary;
+    border-color: $color-primary;
+    color: $color-white;
+  }
 }
 
 /*=====  End of Forms  ======*/
@@ -196,222 +222,240 @@ input:not([type="submit"]), textarea {
 =            Bootstrap                        =
 =============================================*/
 .bg-light {
-    background-color: #494949 !important;
+  background-color: #494949 !important;
 }
 
 /* WOOCOMMERCE-DESIGN*/
 .single-product {
-    background-color: #f8f8f8 !important;
+  background-color: #f8f8f8 !important;
 }
 
 .product-template-default .site-content {
-    max-width: 450px;
+  max-width: 450px;
 }
 
 .product-template-default .content-area {
-    max-width: 100%;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
+  max-width: 100%;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
 }
 
-.woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary {
-    float: inherit !important;
-    width: 100%;
-    margin: auto;
+.woocommerce #content div.product div.summary,
+.woocommerce div.product div.summary,
+.woocommerce-page #content div.product div.summary,
+.woocommerce-page div.product div.summary {
+  float: inherit !important;
+  width: 100%;
+  margin: auto;
 }
 
-.woocommerce #content div.product div.images, .woocommerce div.product div.images, .woocommerce-page #content div.product div.images, .woocommerce-page div.product div.images {
-    float: inherit !important;
-    display: none;
+.woocommerce #content div.product div.images,
+.woocommerce div.product div.images,
+.woocommerce-page #content div.product div.images,
+.woocommerce-page div.product div.images {
+  float: inherit !important;
+  display: none;
 }
 
-.woocommerce div.product p.price, .woocommerce div.product span.price {
-    color: #1b2b83;
-    font-size: 3.25em;
+.woocommerce div.product p.price,
+.woocommerce div.product span.price {
+  color: #1b2b83;
+  font-size: 3.25em;
 }
 
 .single_add_to_cart_button {
-    color: #3244ac !important;
-    border-color: #3244ac !important;
-    background-color: transparent !important;
-    font-family: 'Roboto Slab',serif;
-    text-transform: uppercase;
-    border: 1px solid #3244ac !important;
+  color: #3244ac !important;
+  border-color: #3244ac !important;
+  background-color: transparent !important;
+  font-family: "Roboto Slab", serif;
+  text-transform: uppercase;
+  border: 1px solid #3244ac !important;
 }
 
 .single_add_to_cart_button:hover {
-    color: #fff !important;
-    border-color: #3244ac !important;
-    background-color: #3244ac !important;
+  color: #fff !important;
+  border-color: #3244ac !important;
+  background-color: #3244ac !important;
 }
 
 .product-template-default .entry-summary {
-    background-color: #e9e9e9 !important;
-    padding: 0 20px;
-    padding-bottom: 1px;
+  background-color: #e9e9e9 !important;
+  padding: 0 20px;
+  padding-bottom: 1px;
 }
 
 .product-template-default .related {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .product-template-default .related ul {
-    padding-left: 0 !important;
+  padding-left: 0 !important;
 }
 
 .product-template-default .related .products {
-    display: flex;
+  display: flex;
 }
 
 .product-template-default .related ul li {
-    width: 50% !important;
+  width: 50% !important;
 }
 
 .product-template-default .related ul li a img {
-    display: none !important;
+  display: none !important;
 }
 
 .product-template-default .related ul li:last-child {
-    margin-right: 0 !important;
+  margin-right: 0 !important;
 }
 
 .product-template-default .related ul li a h2 {
-    text-align: left !important;
-    text-transform: initial !important;
+  text-align: left !important;
+  text-transform: initial !important;
 }
 
 .product-template-default .related h2 {
-    text-align: center;
-    font-size: 23px !important;
-    text-transform: uppercase;
+  text-align: center;
+  font-size: 23px !important;
+  text-transform: uppercase;
 }
 
 .product-template-default .product_meta {
-    display: none;
+  display: none;
 }
 
 .product-template-default div.product form.cart .button {
-    vertical-align: middle;
-    float: left;
-    width: 100%;
+  vertical-align: middle;
+  float: left;
+  width: 100%;
 }
 
 .product-template-default div.product form.cart div.quantity {
-    width: 100%;
+  width: 100%;
 }
 
 .product-template-default .quantity .qty {
-    width: 100%;
-    line-height: 35px;
-    margin-bottom: 1rem;
+  width: 100%;
+  line-height: 35px;
+  margin-bottom: 1rem;
 }
 
 .product-template-default .postinfo {
-    display: none;
+  display: none;
 }
 
 .product-template-default h1 {
-    font-size: 40px;
-    margin-bottom: 8px;
-    color: #1b2b83;
+  font-size: 40px;
+  margin-bottom: 8px;
+  color: #1b2b83;
 }
 
 .product-template-default ul.products li.product .price {
-    color: #1b2b83 !important;
-    font-size: 21px;
+  color: #1b2b83 !important;
+  font-size: 21px;
 }
 
 .product-template-default .woocommerce-Price-amount amount {
-    color: #1b2b83 !important;
+  color: #1b2b83 !important;
 }
 
 .product-template-default .product_type_simple {
-    text-transform: uppercase;
-    font-family: 'Roboto Slab',serif;
-    font-size: 14px !important;
+  text-transform: uppercase;
+  font-family: "Roboto Slab", serif;
+  font-size: 14px !important;
 }
 
 .woocommerce-cart table.cart .product-thumbnail {
-    display: none;
+  display: none;
 }
 
 .woocommerce-cart .checkout-button {
-    text-transform: uppercase !important;
-    font-family: 'Roboto Slab',serif !important;
-    font-size: 14px !important;
-    color: #3244ac !important;
-    border: 1px solid #3244ac  !important;
-    background-color: transparent !important;
-    background-image: none !important;
+  text-transform: uppercase !important;
+  font-family: "Roboto Slab", serif !important;
+  font-size: 14px !important;
+  color: #3244ac !important;
+  border: 1px solid #3244ac !important;
+  background-color: transparent !important;
+  background-image: none !important;
 }
 
 .woocommerce-cart .checkout-button:hover {
-    color: #fff !important;
-    border-color: #3244ac !important;
-    background-color: #3244ac !important;
+  color: #fff !important;
+  border-color: #3244ac !important;
+  background-color: #3244ac !important;
 }
 
-.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
-    width: 60% !important;
+.woocommerce .cart-collaterals .cart_totals,
+.woocommerce-page .cart-collaterals .cart_totals {
+  width: 60% !important;
 }
 
 .woocommerce-cart .woocommerce {
-    padding: 1rem;
-    background-color: #f8f8f8 !important;
+  padding: 1rem;
+  background-color: #f8f8f8 !important;
 }
 
-.woocommerce-page button, .woocommerce-page .button, .checkout-button, .product_type_simple {
-    text-transform: uppercase !important;
-    font-family: 'Roboto Slab',serif !important;
-    font-size: 14px !important;
+.woocommerce-page button,
+.woocommerce-page .button,
+.checkout-button,
+.product_type_simple {
+  text-transform: uppercase !important;
+  font-family: "Roboto Slab", serif !important;
+  font-size: 14px !important;
 }
 
-.select2-container--default .select2-results__option--highlighted[aria-selected], .select2-container--default .select2-results__option--highlighted[data-selected] {
-    background-color: #3244ac !important;
+.select2-container--default
+  .select2-results__option--highlighted[aria-selected],
+.select2-container--default
+  .select2-results__option--highlighted[data-selected] {
+  background-color: #3244ac !important;
 }
 
 .woocommerce-cart-form .product-thumbnail {
-    display: none !important;
+  display: none !important;
 }
 
-.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
-    margin: 10px !important;
-    width: 40% !important;
-    display: inline-block !important;
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product {
+  margin: 10px !important;
+  width: 40% !important;
+  display: inline-block !important;
 }
 
-.woocommerce .products ul, .woocommerce ul.products {
-    display: inherit !important;
-    text-align: center;
+.woocommerce .products ul,
+.woocommerce ul.products {
+  display: inherit !important;
+  text-align: center;
 }
 
 .woocommerce-page .site-content {
-    width: 50%;
+  width: 50%;
 }
 
-.woocommerce ul.products li.product .woocommerce-loop-category__title, .woocommerce ul.products li.product .woocommerce-loop-product__title, .woocommerce ul.products li.product h3 {
-    font-size: 23px !important;
+.woocommerce ul.products li.product .woocommerce-loop-category__title,
+.woocommerce ul.products li.product .woocommerce-loop-product__title,
+.woocommerce ul.products li.product h3 {
+  font-size: 23px !important;
 }
 
 .woocommerce ul.products li.product .price {
-    color: #1b2b83 !important;
-    font-size: 21px;
+  color: #1b2b83 !important;
+  font-size: 21px;
 }
 
 .woocommerce-checkout .woocommerce-input-wrapper input {
-    padding: 10px;
+  padding: 10px;
 }
 
 .woocommerce-checkout .woocommerce-input-wrapper {
-    width: 100%;
+  width: 100%;
 }
 
 .woocommerce-checkout .woocommerce-additional-fields__field-wrapper {
-    display: none;
+  display: none;
 }
 
 .woocommerce-checkout #payment button {
-    background-color: #3244ac !important;
-    padding: 13px 50px;
+  background-color: #3244ac !important;
+  padding: 13px 50px;
 }

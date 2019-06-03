@@ -1,153 +1,149 @@
 .block-sets {
-    padding-bottom: 4rem;
-    background-color: #f8f8f8;
+  padding-bottom: 4rem;
+  background-color: #f8f8f8;
 
-    img {
-        width: 100%;
+  img {
+    width: 100%;
+  }
+
+  .section-title {
+    color: $color-black !important;
+    margin-bottom: 50px;
+
+    @media screen and (max-width: 991px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  .set {
+    &-title,
+    &-price {
+      color: #000;
+      margin: 0;
+      font-family: Montserrat, sans-serif !important;
+      font-weight: 300;
     }
 
-    .section-title {
-        color: $color-black !important;
-        margin-bottom: 50px;
+    &-title {
+      font-size: 1.5rem;
 
+      @media screen and (max-width: 767px) {
+        text-align: center;
+      }
+    }
+
+    &-price {
+      font-size: 6rem;
+
+      @media screen and (max-width: 930px) {
+        font-size: 6rem;
+      }
+
+      @media screen and (max-width: 767px) {
+        text-align: center;
+        font-size: 85px;
+      }
+
+      @media screen and (max-width: 380px) {
+        font-size: 50px;
+      }
+    }
+
+    .nav-tabs {
+      border-bottom: inherit !important;
+      margin-bottom: 1rem;
+
+      .nav-link {
+        border-radius: 0 !important;
+        flex-grow: 1;
+        text-align: center;
+        color: $color-black;
+        border-color: $color-black !important;
+        margin-right: -1px;
+        line-height: 35px;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &.active,
+        &:hover {
+          color: #fff;
+          background-color: $color-black;
+        }
+      }
+    }
+
+    .block-prix {
+      margin-top: -50px;
+
+      @media screen and (max-width: 767px) {
+        max-width: 100%;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        margin-top: 30px;
+      }
+    }
+
+    .block-nav-set {
+      padding-top: 20px;
+
+      .btn-outline-primary {
         @media screen and (max-width: 991px) {
-            margin-bottom: 10px;
+          width: 325px;
         }
+
+        @media screen and (max-width: 867px) {
+          width: 295px;
+        }
+      }
+
+      ul {
+        list-style: none;
+        margin-bottom: 75px;
+
+        @media screen and (max-width: 867px) {
+          margin-bottom: 55px;
+        }
+
+        li {
+          padding-left: 2em;
+          font-size: 23px;
+          margin-bottom: 8px;
+          font-family: "Roboto Slab", serif;
+
+          @media screen and (max-width: 991px) {
+            font-size: 21px;
+            margin-bottom: 6px;
+          }
+        }
+
+        li:before {
+          content: url(https://easylaundry.fr/wp-content/uploads/2019/03/Trace252.svg);
+          display: inline-block;
+          margin-left: -2em;
+          width: 1em;
+          margin-right: 2rem;
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        max-width: 100%;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+      }
+
+      nav {
+        @media (max-width: 767px) {
+          width: inherit !important;
+        }
+      }
+
+      .btn {
+        @media screen and (max-width: 767px) {
+          display: block;
+        }
+      }
     }
-
-    .set {
-        &-title, &-price {
-            color: #000;
-            margin: 0;
-            font-family: Montserrat, sans-serif !important;
-            font-weight: 300;
-        }
-
-        &-title {
-            font-size: 1.5rem;
-
-            @media screen and (max-width: 767px) {
-                text-align: center;
-            }
-        }
-
-        &-price {
-            font-size: 6rem;
-
-            @media screen and (max-width: 930px) {
-                font-size: 6rem;
-            }
-
-            @media screen and (max-width: 767px) {
-                text-align: center;
-                font-size: 85px;
-            }
-
-            @media screen and (max-width: 380px) {
-                font-size: 50px;
-            }
-        }
-
-        .nav-tabs {
-            border-bottom: inherit !important;
-            margin-bottom: 1rem;
-
-            .nav-link {
-                border-radius: 0 !important;
-                flex-grow: 1;
-                text-align: center;
-                color: $color-black;
-                border-color: $color-black !important;
-                margin-right: -1px;
-                line-height: 35px;
-                font-family: Montaga,serif;
-
-                &:hover {
-                    cursor: pointer;
-                }
-
-                &.active, &:hover {
-                    color: #fff;
-                    background-color: $color-black;
-                }
-            }
-        }
-
-        .block-prix {
-            margin-top: -50px;
-
-            @media screen and (max-width: 767px) {
-                max-width: 100%;
-                -ms-flex: 0 0 100%;
-                flex: 0 0 100%;
-                margin-top: 30px;
-            }
-        }
-
-        .block-nav-set {
-            padding-top: 20px;
-
-            .btn-outline-dark {
-                line-height: 35px;
-                width: 360px;
-                font-weight: bold;
-                font-size: 20px;
-
-                @media screen and (max-width: 991px) {
-                    width: 325px;
-                }
-
-                @media screen and (max-width: 867px) {
-                    width: 295px;
-                }
-            }
-
-            ul {
-                list-style: none;
-                margin-bottom: 75px;
-
-                @media screen and (max-width: 867px) {
-                    margin-bottom: 55px;
-                }
-
-                li {
-                    padding-left: 2em;
-                    font-size: 23px;
-                    margin-bottom: 8px;
-                    font-family: 'Roboto Slab',serif;
-
-                    @media screen and (max-width: 991px) {
-                        font-size: 21px;
-                        margin-bottom: 6px;
-                    }
-                }
-
-                li:before {
-                    content: url(https://easylaundry.fr/wp-content/uploads/2019/03/Trace252.svg);
-                    display: inline-block;
-                    margin-left: -2em;
-                    width: 1em;
-                    margin-right: 2rem;
-                }
-            }
-
-            @media screen and (max-width: 767px) {
-                max-width: 100%;
-                -ms-flex: 0 0 100%;
-                flex: 0 0 100%;
-            }
-
-            nav {
-                @media (max-width: 767px) {
-                    width: inherit !important;
-                }
-            }
-
-            .btn {
-                @media screen and (max-width: 767px) {
-                    display: block;
-                }
-            }
-        }
-    }
+  }
 }
