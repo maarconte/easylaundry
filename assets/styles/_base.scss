@@ -95,37 +95,37 @@ header {
 =============================================*/
 
 h1 {
-  font-weight: 500;
-  @include heading-size(6);
-  @include mobile {
-    @include heading-size(4);
-  }
-}
-
-h2 {
-  font-weight: 400;
+  font-weight: 600;
   @include heading-size(5);
   @include mobile {
     @include heading-size(3);
   }
 }
 
-h3 {
+h2 {
+  font-weight: 400;
   @include heading-size(4);
   @include mobile {
     @include heading-size(2);
   }
 }
 
-h4 {
+h3 {
   @include heading-size(3);
   @include mobile {
-    @include heading-size(2);
+    @include heading-size(1);
+  }
+}
+
+h4 {
+  @include heading-size(2);
+  @include mobile {
+    @include heading-size(1);
   }
 }
 
 h5 {
-  @include heading-size(2);
+  @include heading-size(1);
 
   letter-spacing: 1px;
 }

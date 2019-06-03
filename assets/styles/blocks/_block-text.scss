@@ -1,28 +1,24 @@
 main#blocks {
-    .block-text {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position-x: -25%;
-        background-position-y: bottom;
+  .block-text {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -25%;
+    background-position-y: bottom;
 
-        p {
-            font-size: 1.3rem;
-        }
-
-        .container {
-            max-width: 435px !important;
-        }
-
-        &.bg-primary {
-            color: $color-secondary;
-        }
-
-        .asterisk {
-            opacity: 1;
-
-            span {
-                color: #7f8acb !important;
-            }
-        }
+    p {
+      font-size: 1.3rem;
     }
+
+    .container {
+      max-width: 435px !important;
+    }
+
+    &.bg-primary {
+      color: $color-secondary;
+    }
+
+    .asterisk {
+      opacity: 1;
+    }
+  }
 }

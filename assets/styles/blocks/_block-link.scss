@@ -9,9 +9,7 @@
   }
 
   .block-title-link {
-    padding-top: 100px;
-    padding-right: 9%;
-    padding-bottom: 2.8rem;
+    padding-bottom: 2rem;
 
     @media screen and (max-width: 991px) {
       padding-right: 15px;
@@ -30,15 +28,31 @@
     }
   }
 
+  .section-title {
+    color: $color-dark !important;
+    font-weight: 600 !important;
+    text-align: left !important;
+  }
+
   .section-text {
-    font-size: 1.8rem !important;
-    line-height: 2.5rem;
-    margin-bottom: 1rem !important;
+    background-color: rgba($color-white, 0.9);
+    border-radius: 3px;
+    padding: 30px;
+    margin-bottom: 15px !important;
     text-align: left !important;
     text-transform: initial !important;
-
-    //color: $color-primary-darker;
     font-weight: 300;
+    font-style: italic;
+    font-size: 21px;
+    width: 355px;
+    line-height: 1.5;
+    h2 {
+      color: $color-primary;
+      font-size: 21px;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      font-style: normal;
+    }
 
     @media screen and (max-width: 1015px) {
       // font-size: 1.5rem !important;
@@ -60,7 +74,8 @@
   }
 
   .btn {
-    margin-top: 1rem;
+    display: block;
+    width: 355px;
   }
 }
 
@@ -92,7 +107,9 @@
     line-height: 35px !important;
   }
 }
-
+.asterisk {
+  margin-top: 115px !important;
+}
 .bg-secondary {
   // padding: 1rem 3rem 3rem 3rem!important;
   background-size: cover;
@@ -105,11 +122,5 @@
     @media screen and (max-width: 991px) {
       padding-right: 15px;
     }
-  }
-}
-
-.block-link:last-child {
-  .block-title-link {
-    color: #414a8d !important;
   }
 }
