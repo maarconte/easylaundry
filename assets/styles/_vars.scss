@@ -60,7 +60,7 @@ $color-gradient: linear-gradient(
 /––––––––––––––––––––––––*/
 $html__fontname: "Montserrat", sans-serif; // Normal 400, Medium 500, Bold 700
 $html__bgcolor: $color-grey;
-$html__textcolor: $color-black;
+$html__textcolor: $color-dark;
 
 /* BODY
 /––––––––––––––––––––––––*/
@@ -78,8 +78,8 @@ $nav__spacercolor: $color-black;
 
 /* ANCHORS
 /––––––––––––––––––––––––*/
-$a__linkcolor: $color-dark;
-$a__hovercolor: $color-dark;
+$a__linkcolor: $color-primary;
+$a__hovercolor: $color-primary-darker;
 $a__textdecoration: "none";
 
 /*==================================================================================

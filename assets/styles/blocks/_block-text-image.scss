@@ -1,105 +1,98 @@
 .block-text-image {
-    padding-bottom: 20px;
-    background-color: #ECEFFF;
+  padding-bottom: 20px;
 
-    @media (min-width: 1200px) {
-        .container {
-            max-width: 970px;
-        }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 970px;
     }
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-top: 3rem !important;
+  }
+
+  & .section {
+    // height: 764px;
+    text-align: right;
 
     @media screen and (max-width: 767px) {
-        padding-top: 3rem !important;
+      margin-bottom: 2rem;
+      display: inherit;
+    }
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+      text-align: left;
+    }
+    &-title {
+      margin-bottom: 0;
+      line-height: 196px;
+
+      @media screen and (max-width: 430px) {
+        margin-bottom: 2rem !important;
+      }
+
+      @media screen and (max-width: 410px) {
+        margin-bottom: 3.2rem !important;
+      }
     }
 
-    .section-title {
-        // margin-bottom: 40px !important;
-        margin-bottom: 0;
+    &-text {
+      @media screen and (max-width: 767px) {
+        max-width: 100%;
+        display: block;
+        text-align: center;
+      }
 
-        @media screen and (max-width: 430px) {
-            margin-bottom: 2rem !important;
-        }
-
-        @media screen and (max-width: 410px) {
-            margin-bottom: 3.2rem !important;
-        }
-    }
-
-    & .section:nth-child(even) {
-        flex-direction: row-reverse;
-        text-align: left;
-    }
-
-    .section {
-        text-align: right;
-
+      h4 {
+        font-size: 33px;
+        color: $color-dark;
         @media screen and (max-width: 767px) {
-            margin-bottom: 2rem;
-            display: inherit;
+          font-size: 26px;
+          margin-bottom: 0;
         }
+      }
 
-        &-text {
-            @media screen and (max-width: 767px) {
-                font-size: 16px;
-                max-width: 100%;
-                display: block;
-                text-align: center;
-            }
+      p {
+        font-size: 1rem;
+        margin-top: 1rem;
+        font-weight: 300;
 
-            h4 {
-                font-size: 33px;
-
-                @media screen and (max-width: 767px) {
-                    font-size: 26px;
-                    margin-bottom: 0;
-                }
-            }
-
-            p {
-                margin-top: 1rem;
-                font-size: 22px;
-                font-weight: 300;
-
-                @media screen and (max-width: 1000px) {
-                    font-size: 17px;
-                }
-            }
-
-            ul {
-                margin-left: 40px !important;
-            }
+        @media screen and (max-width: 1000px) {
+          font-size: 17px;
         }
-
-        &-image {
-            height: 290px;
-            overflow: hidden;
-            position: relative;
-            display: flex;
-
-            @media screen and (max-width: 1000px) {
-                height: 290px;
-            }
-
-            @media screen and (max-width: 950px) {
-                height: 275px;
-            }
-
-            @media screen and (max-width: 767px) {
-                height: 200px;
-                display: block;
-                max-width: 100%;
-            }
-
-            // @media screen and (max-width: 430px) {
-            //     height: 350px !important;
-            // }
-
-            img {
-                display: block;
-                max-width: 200px;
-                max-height: 200px;
-                margin: auto;
-            }
-        }
+      }
     }
+
+    &-image {
+      height: 290px;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+
+      @media screen and (max-width: 1000px) {
+        height: 290px;
+      }
+
+      @media screen and (max-width: 950px) {
+        height: 275px;
+      }
+
+      @media screen and (max-width: 767px) {
+        height: 200px;
+        display: block;
+        max-width: 100%;
+      }
+
+      // @media screen and (max-width: 430px) {
+      //     height: 350px !important;
+      // }
+
+      img {
+        display: block;
+        max-width: 200px;
+        max-height: 200px;
+        margin: auto;
+      }
+    }
+  }
 }

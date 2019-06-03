@@ -12,8 +12,8 @@ main#blocks {
       padding: 50px 0;
       position: relative;
       text-align: center;
-      color: $color-primary;
-      font-weight: 300;
+      color: $color-dark;
+      font-weight: 600;
 
       @media screen and (max-width: 880px) {
         font-size: 35px;
@@ -67,7 +67,7 @@ main#blocks {
     background-position-y: center;
   }
 
-  section:nth-child(2) {
+  /*   section:nth-child(2) {
     background-color: #ecefff !important;
     background-position: left;
 
@@ -103,7 +103,7 @@ main#blocks {
         }
       }
     }
-  }
+  } */
 
   section:nth-child(6) {
     @media screen and (max-width: 991px) {
