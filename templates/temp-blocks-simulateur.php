@@ -16,7 +16,7 @@
     <div class="row">
 
       <div class="block-simulation-text col-sm-5">
-        <p>Audit de conformité - diagnostic et recommandations</p>
+        <p>Audit de conformité - diagnostic et recommandations </p>
         <h1 class="block-simulation-text-title">
           Evaluez la probité de votre démarche RSE pour améliorer votre crédibilité et image de marque
         </h1>
