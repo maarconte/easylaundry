@@ -105,9 +105,9 @@ h1 {
 h2 {
   font-weight: 400;
   @include heading-size(4);
-  @include mobile {
-    @include heading-size(2);
-  }
+  // @include mobile {
+  //   @include heading-size(2);
+  // }
 }
 
 h3 {
@@ -195,6 +195,14 @@ button {
   background-color: $color-primary;
   border-color: $color-primary;
   color: $color-white;
+  @media screen and (max-width: 1201px){
+    margin-top: 0!important;
+  }
+  @media screen and (max-width: 1091px){
+    width: 100%;
+    margin-top: 1rem;
+  }
+
   &:focus,
   &:active,
   &:hover {
@@ -207,6 +215,16 @@ button {
 .btn-outline-primary {
   color: $color-primary;
   border-color: $color-primary;
+  font-size: 14px;
+  margin-bottom: 0;
+   
+  @media screen and (max-width: 1091px){
+    width: 100%;
+    // margin-bottom: 10px;
+  }
+  // @media screen and (min-width: 1091px){
+  //   margin-bottom: 0!important;
+  // }
 
   &:focus,
   &:active,

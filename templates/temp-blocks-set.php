@@ -42,6 +42,10 @@
                                 <p class="set-price"><?php the_sub_field('price_set'); ?> €</p>
                             </div>
                             <div class="col-sm-6 block-nav-set">
+                            <?php if(get_sub_field('image-pack') ) : ?>
+                                <img src="<?php echo get_sub_field('image-pack');?>" style="width: 100%;">
+                            <?php endif; ?>
+                            <span class="notice-photo"><?php echo get_sub_field('notice-photo');?></span>
                             <?php the_sub_field('text_set'); ?>
                                         <!-- Button -->
                                         <?php if (have_rows('button')) : ?>

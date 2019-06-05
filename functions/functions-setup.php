@@ -219,4 +219,16 @@ function footer_new_menu() {
 
 
 
+  function header_new_menu() {
+    register_nav_menus(
+      array(
+        'menu_header' => __( 'Menu Header' ),
+        'extra-menu2' => __( 'Extra Menu 2'  )
+      )
+    );
+  }
+  add_action( 'init', 'header_new_menu' );
+
+
+
 

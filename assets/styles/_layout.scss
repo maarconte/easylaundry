@@ -201,7 +201,7 @@ main#subsites {
   width: 100vw;
   margin-top: auto;
   color: $color-grey;
-  background: $color-black;
+  // background: $color-black;
 
   .row {
     @media screen and (max-width: 767px) {
@@ -276,8 +276,8 @@ main#subsites {
       display: inline-block;
       padding: 0 15px;
       a {
-        color: #fff;
-        font-size: 16px;
+        // color: #fff;
+        font-size: 14px;
       }
     }
   }

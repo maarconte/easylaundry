@@ -33,32 +33,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
     <? yupeach_gtm('body') ?>
-<nav class="navbar navbar-expand-lg navbar-light">
-<div class="container">
-    <div class="d-flex align-items-center">
-        <a class="navbar-brand" href="<?php echo site_url(); ?>"><?php bloginfo( 'name' ); ?></a>
-        <?php $meta_tel_contact = get_theme_mod('tel_contact');
-                            if ($meta_tel_contact == '') {
-                                echo ' ';
-                                   } else {
-                                echo  '<span class="pl-3 pr-3 info-header info-header-tel">'.$meta_tel_contact.'</span>';
-                                   }
-        ?>
 
-        <?php $meta_email_contact = get_theme_mod('email_contact');
-                            if ($meta_email_contact == '') {
-                                echo ' ';
-                                   } else {
-                                echo  '<span class="pl-3 pr-3 info-header info-header-email">'.$meta_email_contact.'</span>';
-                                   }
-        ?>
-    </div>
-<div class="ml-auto">
-    <a class="btn btn-outline-primary mr-2" href="https://easylaundry.fr/boutique">nous contacter</a>
-    <a class="btn btn-primary" href="https://easylaundry.fr/boutique">un mois d'essai</a>
-</div>
-</div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="d-flex align-items-center">
+            <a class="navbar-brand" href="<?php echo site_url(); ?>"><?php bloginfo( 'name' ); ?></a>
+            <?php
+                        wp_nav_menu( array( 
+                        'theme_location' => 'menu_header', 
+                        'container_class' => 'custom-menu-class') 
+                    ); 
+            ?>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="ml-auto collapse navbar-collapse" id="navbarSupportedContent-4">
+            <a class="btn btn-outline-primary mr-2 " href="mailto:san@antonio.net">Nous contacter</a>
+            <a class="btn btn-primary" href="<?php echo site_url(); ?>/#code-promo">un mois d'essai</a>
+        </div>
 </nav>
+
+            
 <script>
 	$(window).on("load, resize", function() {
     var viewportWidth = $(window).width();

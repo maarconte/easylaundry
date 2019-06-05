@@ -49,6 +49,8 @@ function yupeach_blocks() {
     if (get_row_layout() == 'stats') : yupeach_block_stats(); endif;
     if (get_row_layout() == 'faq') : yupeach_block_faq(); endif;
     if (get_row_layout() == 'sets') : yupeach_block_set(); endif;
+    if (get_row_layout() == 'concept') : yupeach_block_concept(); endif;
+    if (get_row_layout() == 'promo') : yupeach_block_promo(); endif;
     endwhile;
   endif;
   return ob_get_flush();
@@ -108,6 +110,7 @@ function yupeach_block_testimonials() {
     include (get_template_directory().'/templates/temp-blocks-testimonials.php');
   return ob_get_flush();
 }
+
 /* PRICE
 /––––––––––––––––––––––––*/
 function yupeach_block_price() {
@@ -115,6 +118,22 @@ function yupeach_block_price() {
     include (get_template_directory().'/templates/temp-blocks-price.php');
   return ob_get_flush();
 }
+/* CONCEPT
+/––––––––––––––––––––––––*/
+function yupeach_block_concept() {
+  ob_start('sanitize_output');
+    include (get_template_directory().'/templates/temp-blocks-concept.php');
+  return ob_get_flush();
+}
+
+/* PROMO
+/––––––––––––––––––––––––*/
+function yupeach_block_promo() {
+  ob_start('sanitize_output');
+    include (get_template_directory().'/templates/temp-blocks-promo.php');
+  return ob_get_flush();
+}
+
 /* LOGOS
 /––––––––––––––––––––––––*/
 function yupeach_block_logos() {

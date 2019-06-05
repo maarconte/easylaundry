@@ -1,0 +1,76 @@
+.block-concept{
+  display: flex;
+  min-height: 300px;
+  position: relative;
+
+  @media screen and (max-width: 980px){
+    display: inherit;
+  }
+
+  .photo_concept{
+    width: 50%;
+    display: block;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    
+    @media screen and (max-width: 980px){
+      width: 100%;
+      height: 350px;
+    }
+  }
+
+  .content_concept{
+    width: 50%;
+    display: block;
+    background:#fff;
+    padding: 9.5em;
+    position: relative;
+
+    @media screen and (max-width: 1380px){
+        padding: 8em;
+    }
+    @media screen and (max-width: 1180px){
+      padding: 6.5em;
+  }
+    @media screen and (max-width: 980px){
+        padding: 2em;
+        width: 100%;
+    }
+    @media screen and (max-width: 680px){
+      padding: 1.5em;
+  }
+    .section-title_concept{
+      margin-bottom: 1.3rem;
+      font-weight: 600;
+      color: $color-dark;
+    }
+    .text-concept{
+      font-size: 15px; 
+      line-height: 23px;
+      margin-bottom: 1.2rem;
+    }
+    .btn-concept{
+      text-transform: uppercase;
+      font-size: 13px;
+      border: 1px solid #35b0c9;
+      padding: 15px 35px;
+      border-radius: 40px;
+      display: inline-block;
+
+      i{
+        width: 40px;
+        font-size: 25px;
+        vertical-align: middle;
+      }
+      .libelle-button{
+        vertical-align: middle;
+      }
+    }
+  }
+} 
+.btn-concept:hover{
+  background-color: #35b0c9;
+  color: #fff;
+}

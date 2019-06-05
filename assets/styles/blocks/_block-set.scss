@@ -1,9 +1,5 @@
 .block-sets {
-  padding-bottom: 4rem;
-
-  img {
-    width: 100%;
-  }
+  padding-bottom: 1rem;
 
   .section-title {
     margin-bottom: 50px;
@@ -59,6 +55,10 @@
         margin-right: -1px;
         line-height: 35px;
 
+        @media (max-width: 767px){
+          font-size: 18px!important;      
+        }
+
         &:hover {
           cursor: pointer;
         }
@@ -85,6 +85,18 @@
     .block-nav-set {
       padding-top: 20px;
 
+      h3{
+        margin-top: 1rem;
+
+        @media (max-width: 767px){
+           font-size: inherit;
+        }
+      }
+
+      .notice-photo{
+       font-size: 13px;
+      }
+
       .btn-outline-primary {
         @media screen and (max-width: 991px) {
           width: 325px;
@@ -105,13 +117,13 @@
 
         li {
           padding-left: 2em;
-          font-size: 23px;
+          font-size: 16px;
           margin-bottom: 8px;
 
-          @media screen and (max-width: 991px) {
-            font-size: 21px;
-            margin-bottom: 6px;
-          }
+          // @media screen and (max-width: 991px) {
+          //   font-size: 21px;
+          //   margin-bottom: 6px;
+          // }
         }
 
         li:before {
@@ -119,7 +131,7 @@
           display: inline-block;
           margin-left: -2em;
           width: 1em;
-          margin-right: 2rem;
+          margin-right: 1rem;
         }
       }
 

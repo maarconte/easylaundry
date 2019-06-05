@@ -1,0 +1,124 @@
+.block-promo{
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 870px;
+      padding: 0;
+    }
+  }
+.header-promo{
+    position: relative;
+}
+    .visuel-promo{
+        z-index: 1;
+        display: block;
+        width: 300px;
+        margin: auto;
+        position: relative;
+    }
+
+    .trait-promo-header{
+        z-index: 0;
+        width: 100%;
+        height: 1.5px;
+        margin-top: -33px;
+        background-color: #ECEFFF;
+        bottom: 30px;
+        position: absolute;
+    }
+    .description-promo{
+        text-align: right;
+        font-size: 20px;
+        margin-top: 1rem;
+        font-style: italic;
+
+        @media screen and (max-width: 843px){
+            text-align: center;
+        }
+        p{
+            margin-bottom: 0;
+        }
+    }
+    .notice-description-promo{
+        text-align: right;
+        font-size: 17px;
+        color:#7e180f;
+
+        @media screen and (max-width: 843px){
+            text-align: center;
+        }
+    }
+}
+.container-promo-block{
+    border-bottom: 1.5px solid #ECEFFF;
+    margin-bottom: 2rem;
+}
+
+#form-promo{
+    p {
+        margin-bottom: 0;
+    }
+    br{
+        display: none;
+    }
+    .floating-label{
+        position: relative;
+        display: block;
+        margin: 10px 0;
+        
+        
+        .label{
+                position: absolute;
+                top: 1em;
+                left: 1.5em;
+                color: #555;
+                transition: 0.15s ease-out all;
+                z-index: 9;
+                text-transform: uppercase;
+                font-size: 13px;
+        }
+
+        .stay {
+                    top: .4em;
+                    font-size: .7em;
+                    color: #888;
+                    transition: .15s ease-out all;
+                    font-size: 11px;
+                }
+ 
+        
+        .wpcf7-form-control-wrap{
+            input {
+                line-height: 1.4em;
+                font-size: 1.1em;
+                width: 100%;
+                padding: 1.7em 1em 1em 0.98rem;
+                font-size: 16px;
+            }
+            .wpcf7-not-valid-tip{
+                display: none!important;
+            }
+            .wpcf7-not-valid{
+                border:1.5px solid red!important;
+            }
+            
+        } 
+    }
+    .button-form-promo{
+        input{
+            width: 100%;
+            font-size: 15px;
+        }
+        .wpcf7-acceptance-missing {
+            border: 0!important;
+        }
+        .wpcf7-response-output{
+            margin-top: 0!important;
+        }
+        .wpcf7-validation-errors{
+            border: 0!important;
+            margin: 0 0 20px 0;
+            font-size: 13px;
+        }
+    }
+} 
+

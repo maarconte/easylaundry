@@ -3,10 +3,11 @@
   background-position-x: right;
   background-position-y: bottom;
   position: relative;
+  min-height: 90vh;
 
-  @media screen and (max-width: 991px) {
-    background-image: inherit !important;
-  }
+  // @media screen and (max-width: 991px) {
+  //   background-image: inherit !important;
+  // }
 
   .block-title-link {
     padding-bottom: 2rem;
@@ -32,6 +33,14 @@
     color: $color-dark !important;
     font-weight: 600 !important;
     text-align: left !important;
+    line-height: 37px!important;
+
+    @media screen and (max-width: 991px) {
+      text-align: center !important;
+    }
+    @media screen and (max-width: 880px) {
+      line-height: 37px!important;
+    }
   }
 
   .section-text {
@@ -45,7 +54,10 @@
     font-style: italic;
     font-size: 21px;
     width: 355px;
-    line-height: 1.5;
+    @media screen and (max-width: 390px) {
+      width: 100%;
+    }
+    // line-height: 1.5;
     h2 {
       color: $color-primary;
       font-size: 21px;
@@ -61,10 +73,8 @@
     }
 
     @media screen and (max-width: 991px) {
-      font-size: 28px !important;
-      line-height: 30px;
-      text-align: center !important;
-      margin-bottom: 2rem !important;
+      // margin-bottom: 2rem !important;
+      margin: auto;
     }
 
     @media screen and (max-width: 480px) {
@@ -76,13 +86,16 @@
   .btn {
     display: block;
     width: 355px;
+    @media screen and (max-width: 390px) {
+      width: 100%;
+    }
   }
 }
 
 .Blanc {
-  @media screen and (max-width: 991px) {
-    background-image: inherit !important;
-  }
+  // @media screen and (max-width: 991px) {
+  //   background-image: inherit !important;
+  // }
 
   .block-title-link {
     @media screen and (max-width: 867px) {
