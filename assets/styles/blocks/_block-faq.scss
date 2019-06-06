@@ -1,35 +1,43 @@
 .block-faq {
-    .section-title {
-        text-align: center;
+  .section-title {
+    padding-bottom: 0 !important;
+
+    text-align: left !important;
+  }
+
+  .faq-accordion {
+    .card {
+      border: none;
+      background-color: transparent;
     }
 
-    .faq-accordion {
-        .card {
-            border: none;
-            background-color: transparent;
-        }
+    .card-header {
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid $color-primary;
+      color: $color-primary;
+      padding-left: 0;
+      padding-right: 0;
+      font-size: 1.3rem;
 
-        .card-header {
-            background-color: transparent;
-            border: none;
+      @media screen and (max-width: 767px) {
+        font-size: 19px;
+      }
 
-            @media screen and (max-width: 767px) {
-                font-size: 19px;
-            }
+      &-expand {
+        color: $color-primary;
+        float: right;
+      }
 
-            &-expand {
-                color: rgba($color: $color-primary, $alpha: 0.5);
-            }
-
-            &:hover {
-                cursor: pointer;
-            }
-        }
-
-        .answer {
-            @media screen and (max-width: 767px) {
-                font-size: 15px;
-            }
-        }
+      &:hover {
+        cursor: pointer;
+      }
     }
+
+    .answer {
+      @media screen and (max-width: 767px) {
+        font-size: 15px;
+      }
+    }
+  }
 }

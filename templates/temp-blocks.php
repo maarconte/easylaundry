@@ -15,6 +15,14 @@
 
 <main id="blocks">
 
+<? if (has_post_thumbnail()) : ?>
+    <section>
+      <div class="element teaser">
+        <? the_post_thumbnail('medium_large', ['class' => 'modernizr-of d-block m-auto']); ?>
+      </div>
+    </section>
+  <? endif?>
+
   <? if (have_posts()): while (have_posts()): the_post() ?>
     <? the_content()?>
     <? yupeach_blocks() ?>
@@ -23,12 +31,12 @@
   <a class="scrollToTop"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
   <script>
     $(document).ready(function(){
-     
+
       $('.scrollToTop').click(function(){
           $('html, body').animate({scrollTop : 0},800);
           return false;
       });
-    
+
     });
   </script>
 </main>
