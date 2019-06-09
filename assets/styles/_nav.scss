@@ -141,4 +141,10 @@ nav.navbar {
         width: 1em !important;
         height: 1em !important;
     }
+
+    .navbar-collapse .btn:first-child {
+        @media screen and (max-width: 991px) {
+            margin-bottom: 10px;
+        }
+    }
 }
