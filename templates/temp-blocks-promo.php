@@ -26,9 +26,9 @@
                      <?php if(get_sub_field('introduction') ) : ?>
                         <div class="description-promo"><?php echo get_sub_field('introduction'); ?></div>
                      <?php endif; ?>
-                        <p class="notice-description-promo"><?php echo get_sub_field('notice_intro'); ?></p>
                 </div>
                 <div class="col-md-6">
+                     <p class="notice-description-promo"><?php echo get_sub_field('notice_intro'); ?></p>
                      <?php $form = get_sub_field('formulaire');?>
                             <?php if($form) : ?>
 

@@ -27,8 +27,6 @@
     <? the_content()?>
     <? yupeach_blocks() ?>
   <? endwhile; endif ?>
-
-  <a class="scrollToTop"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
   <script>
     $(document).ready(function(){
 
@@ -40,5 +38,5 @@
     });
   </script>
 </main>
-
+<a class="scrollToTop"><i class="fa fa-long-arrow-alt-up" aria-hidden="true"></i></a>
 <? get_footer() ?>

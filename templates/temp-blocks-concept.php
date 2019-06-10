@@ -30,7 +30,7 @@
                             <a href="<?php the_sub_field('url'); ?>" class="btn-concept"><i class="fa fa-play-circle"></i><span class="libelle-button"><?php the_sub_field('label'); ?></span></a>
                         <?php endif; ?>
                         <?php if (get_sub_field('link') == 'Interne' && get_sub_field('label') && get_sub_field('int_url') ) : ?>
-                            <a href="<?php the_sub_field('int_url'); ?>" class="btn-concept"><i class="fa fa-play-circle"></i><span class="libelle-button"><?php the_sub_field('label'); ?></span></a>
+                            <a href="<?php the_sub_field('int_url'); ?>" class="btn-concept"><i class="fa fa-play"></i><span class="libelle-button"><?php the_sub_field('label'); ?></span></a>
                         <?php endif; ?>
                     <?php endwhile; ?>
             <?php endif; ?>

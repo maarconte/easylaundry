@@ -53,16 +53,24 @@
     }
     .btn-concept{
       text-transform: uppercase;
-      font-size: 13px;
+      font-size: 12px;
       border: 1px solid #35b0c9;
-      padding: 15px 35px;
+      padding: 9px 30px;
       border-radius: 40px;
       display: inline-block;
 
       i{
-        width: 40px;
-        font-size: 25px;
+        font-size: 9px;
+        width: 35px;
+        height: 35px;
+        line-height: 10px;
+        margin-right: 0.8rem;
+        padding: 13px 14px;
+        text-align: center;
         vertical-align: middle;
+        color: #fff;
+        border-radius: 50%;
+        background-color: #35b0c9;
       }
       .libelle-button{
         vertical-align: middle;
