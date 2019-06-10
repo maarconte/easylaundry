@@ -2165,5 +2165,5 @@
 		'active' => 1,
 		'description' => '',
 	));
-	
+
 	endif;

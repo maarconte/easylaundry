@@ -24,19 +24,19 @@
         <div class="accordion faq-accordion" id="faq-accordion">
             <!-- FAQ -->
             <?php if ( have_rows('faq') ) :  $i =0; ?>
-
-                <?php while( have_rows('faq') ) : the_row();?>
+           <?php $uniqueid = uniqid('faq'); ?>
+                <?php while( have_rows('faq') ) : the_row(); $i++ ?>
                     <div class="card">
-                        <div class="card-header" id="heading-<?php echo $i ?>" data-toggle="collapse" data-target="#collapse-<?php echo $i ?>" aria-expanded="true" aria-controls="collapseOne">
+                        <div class="card-header" id="heading-<?php echo $uniqueid.'-'.$i ?>" data-toggle="collapse" data-target="#collapse-<?php echo $uniqueid.'-'.$i ?>" aria-expanded="true" aria-controls="collapseOne">
                         <div class="row">
-                            <div class="col-2 col-md-1"> <span class="card-header-expand" ><i class="fas fa-plus"></i></span></div>
                             <div class="col-10 col-md-11"><?php the_sub_field('question'); ?></div>
+                            <div class="col-2 col-md-1"> <span class="card-header-expand" ><i class="fas fa-plus"></i></span></div>
                         </div>
 
 
                         </div>
 
-                        <div id="collapse-<?php echo $i ?>" class="collapse" aria-labelledby="heading-<?php echo $i ?>" data-parent="#faq-accordion">
+                        <div id="collapse-<?php echo $uniqueid.'-'.$i ?>" class="collapse" aria-labelledby="heading-<?php echo $uniqueid.'-'.$i ?>" data-parent="#faq-accordion">
                             <div class="card-body">
                                 <p class="answer"><?php the_sub_field('answer'); ?></p>
                             </div>
@@ -45,7 +45,7 @@
 
 
 
-                <?php $i++; endwhile; ?>
+                <?php  endwhile; ?>
 
             <?php endif; ?>
 
