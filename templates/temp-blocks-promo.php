@@ -16,19 +16,19 @@
         <?php if(get_sub_field('title') ) : ?>
                       <h2 class="section-title"><?php echo get_sub_field('title'); ?></h2>
             <?php endif; ?>
-            <div class="header-promo"> 
-                <div class="trait-promo-header"></div>
-                <img class="visuel-promo" src="<? echo the_sub_field('image_promo') ?>"/>
+            <div class="header-p"> 
+                <div class="trait-p-header"></div>
+                <img class="visuel-p" src="<? echo the_sub_field('image_promo') ?>"/>
             </div>
             
-            <div class="row container-promo-block">
+            <div class="row container-p-block">
                 <div class="col-md-6">
                      <?php if(get_sub_field('introduction') ) : ?>
-                        <div class="description-promo"><?php echo get_sub_field('introduction'); ?></div>
+                        <div class="description-p"><?php echo get_sub_field('introduction'); ?></div>
                      <?php endif; ?>
                 </div>
                 <div class="col-md-6">
-                     <p class="notice-description-promo"><?php echo get_sub_field('notice_intro'); ?></p>
+                     <p class="notice-description-p"><?php echo get_sub_field('notice_intro'); ?></p>
                      <?php $form = get_sub_field('formulaire');?>
                             <?php if($form) : ?>
 

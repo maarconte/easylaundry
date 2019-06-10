@@ -5,10 +5,10 @@
       padding: 0;
     }
   }
-.header-promo{
+.header-p{
     position: relative;
 }
-    .visuel-promo{
+    .visuel-p{
         z-index: 1;
         display: block;
         width: 300px;
@@ -16,7 +16,7 @@
         position: relative;
     }
 
-    .trait-promo-header{
+    .trait-p-header{
         z-index: 0;
         width: 100%;
         height: 1.5px;
@@ -25,7 +25,7 @@
         bottom: 30px;
         position: absolute;
     }
-    .description-promo{
+    .description-p{
         text-align: right;
         font-size: 20px;
         margin-top: 1rem;
@@ -38,14 +38,14 @@
             margin-bottom: 0;
         }
     }
-    .notice-description-promo{
+    .notice-description-p{
         text-align: left;
         font-size: 14px;
         color:#7e180f;
         margin-bottom: 0;
     }
 }
-.container-promo-block{
+.container-p-block{
     border-bottom: 1.5px solid #ECEFFF;
     margin-bottom: 2rem;
     margin-top: 0.5rem;
