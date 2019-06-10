@@ -1,4 +1,9 @@
 .block-faq {
+  @media screen and (min-width: 992px){
+    .container{
+      max-width: 800px;
+   }    
+  }
   .section-title {
     padding-bottom: 0 !important;
 
