@@ -1,3 +1,4 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
 .block-faq {
   @media screen and (min-width: 992px){
     .container{
@@ -32,11 +33,21 @@
       &-expand {
         color: $color-primary;
         float: right;
+        &:before{
+          font-family: FontAwesome;
+          // content:"\f068";
+        }
       }
-
+      // &.collapsed{
+      //   .card-header-expand:before{
+      //     font-family: FontAwesome;
+      //     content:"\f068";
+      //   }
+      // }
       &:hover {
         cursor: pointer;
       }
+      
     }
 
     .answer {
@@ -45,4 +56,13 @@
       }
     }
   }
+}
+
+.icons-plus:before{
+    font-family: FontAwesome;
+    content:"\f067";
+}
+.icons-moin:before{
+  font-family: FontAwesome;
+  content:"\f068";
 }
